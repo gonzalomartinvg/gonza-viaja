@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="../../images-index/favicon.png">
+    <title>Tips</title>
+    <link rel="stylesheet" href="styles-tips.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="/menu-paginas-principales.css"> <!-- Es el css del menú de las páginas principales, la uso acá para acceder al estilo del menú -->
+</head>
+
+<!-- Google ANALYTICS (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DL53XPJ1JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DL53XPJ1JN');
+</script>
+
+
+<body>
+
+  <section class="section-autogenerador-0">
+        
+        <!--Acá va el menú auto generado desde javascript. Se puede chequear en el archivo de modificar-todas-las-paginas y en el css "menu-paginas-principales"-->
+
+  </section>
+
+  <header>
+    <h1>Tips de viajes</h1>
+  </header>
+
+  <h3 class="subtitulo">Elegí un continente y un país</h3>
+
+  <div class="bloque-continente">
+
+    <button class="button-continente america" data-nombrecontinente="america">
+      <p class="nombre-continente">América</p>
+    </button>
+
+    <button class="button-continente asia" data-nombrecontinente="asia">
+      <p class="nombre-continente">Asia</p>
+    </button>
+
+    <button class="button-continente europa" data-nombrecontinente="europa">
+      <p class="nombre-continente">Europa</p>
+    </button>
+
+    <button class="button-continente todos" data-nombrecontinente="todos">
+      <p class="nombre-continente">Todos</p>
+    </button>
+
+    <!-- Los siguientes continentes aún no los visite y están deshabilitados. Para habilitarlos, hay que ir al css "styles-tips-css" y en las clases "africa" y "oceania" eliminar el displar:none -->
+
+    <button class="button-continente africa" data-nombrecontinente="africa">
+      <p class="nombre-continente">África</p>
+    </button>
+
+    <button class="button-continente oceania" data-nombrecontinente="oceania">
+      <p class="nombre-continente">Oceanía</p>
+    </button>
+
+  </div>
+
+  <div class="bloque-autogenerador">
+
+    <!-- Acá va el html autogenerado por el javascript "tips". Cuando clickeamos en los continentes muestra los países de ese continente -->
+
+  </div>
+    
+<script src="tips.js"></script>
+<script src="/paginas/modificar-todas-las-paginas.js"></script> <!-- Este script es el que modifica los bloques autogenerados de las páginas de los destinos. La uso acá para acceder al script del menú y no hacerlo de nuevo -->
+</body>
+</html>

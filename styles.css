@@ -1,0 +1,268 @@
+:root{
+    --primary-color: #0673c6;
+    --primary-color-light: #1993e5;
+    --primary-color-hard: #004695;
+    --secondary-color: #c65906;
+    --secondary-color-light: #e7b452;
+    --accent-color: #ef007e;
+    --blanco-1: #ffff;
+    --blanco-2: #f8f5f5;
+    --gris-1: #e6e3e3;
+    --gris-2: #3f3f3f;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gotham', sans-serif;
+}
+
+html { /*Esto es para que el footer se quede abajo*/
+    min-height: 100%;
+    position: relative;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.bold{
+    font-weight: 700;
+
+}
+
+/*Header*/
+
+.header{
+    width: 100%;
+    margin: auto;
+    display: grid;
+}
+
+.imagen-header{
+    width: 100%;
+    height: 10rem;
+    position: absolute;
+}
+
+.contenedor-principal{
+    width: 90%;
+    margin: auto;
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    z-index: 1;
+}
+
+@media (max-width: 600px) {
+    .contenedor-principal{
+        grid-template-columns: 1fr;
+    }
+  }
+
+.imagen-principal{
+    width: 12rem;
+    justify-self: start;
+    
+}
+
+.nombre-pais{
+    font-size: 3.5rem;
+    justify-self: end;
+    align-self: start;
+    color: var(--blanco-1);
+}
+
+@media (max-width: 600px) {
+    .imagen-header{
+        height: 10rem;
+    }
+    .imagen-principal{
+        justify-self: center;
+        margin-bottom: 1rem;
+    }
+    .nombre-pais{
+        font-size: 2.2rem;
+    }
+  }
+
+/*Menú*/
+
+.elemento-menu{
+    width: 100%;
+    margin: auto;
+
+    display: flex;
+    grid-gap: 0.5rem;
+    text-decoration: none;
+}
+
+.elemento-menu p{
+    font-size: 1.2rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.elemento-menu i{
+    justify-self: center;
+    align-self: center;
+}
+
+
+/*Bloques Generales*/
+
+.bloques{
+    width: 90%;
+    min-height: 14rem;
+    gap: 1rem;
+    column-gap: 2rem; 
+    margin: auto; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+}
+
+.bloque-1{
+   margin-bottom: 4rem;
+}
+
+/*Contenedores Generales*/
+
+.contenedores{
+
+    background-color: var(--blanco-1);
+    background-size: cover;
+    width: 100%;
+    max-width: 43rem; 
+    min-height: 13rem; 
+    margin: auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0.3rem 0.3rem 0.3rem rgb(99, 99, 99);
+
+}
+
+/*Presentación*/
+
+.presentacion{
+    width: 90%;
+    height: fit-content;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 600px) {
+    .presentacion{
+        text-align: justify;
+    }
+  }
+
+.presentacion h1{
+    font-family: 'Gotham bold', sans-serif;
+    color: var(--gris-2);
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+    .presentacion h1{
+        text-align: center;
+    }
+  }
+
+
+.presentacion p{
+    font-family: 'Gotham', sans-serif;
+    color: var(--gris-2);
+    line-height: 1.5rem;
+}
+
+/*Botones*/
+
+.animacion-contenedores{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+.animacion-contenedores :hover{
+    transform: rotate(-2deg);
+    filter: brightness(60%);
+}
+
+.contenedor-1{
+    width: 100%;
+    height: 100%;
+    display: grid;
+}
+
+.titulo-botones{
+    font-family: 'Gotham black', sans-serif;
+    font-size: 1.5rem;
+    color: var(--blanco-1);
+}
+
+.texto-botones{
+    font-family: 'Gotham', sans-serif;
+    font-weight: 600;
+    color: var(--blanco-1);
+    align-self: end;
+}
+
+.europa{
+    background-image: url(images-index/europa-01.jpg);
+    background: cover;
+}
+
+.organiza-tu-viaje{
+    background-image: url(images-index/organiza-tu-viaje-01.jpg);
+    background: cover;
+}
+
+/*BOTÓN INSTAGRAM*/
+
+.contenedor-boton-insta{
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+    display: grid;
+    justify-items: center;
+}
+
+.boton-insta{
+    width: fit-content;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+.boton-insta:hover{
+    background-color: var(--primary-color-hard);
+    transform: rotate(-2deg);
+}
+
+/*FOOTER*/
+
+footer{
+    width: 100%;
+    display: grid;
+    margin: auto;
+    margin-top: 2rem;
+    background-color: var(--primary-color);
+    height: 2rem;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+
+}
+
+.copy{
+    color: white;
+}
+
+/*TIPS*/
+

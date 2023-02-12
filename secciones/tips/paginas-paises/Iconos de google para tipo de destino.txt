@@ -1,0 +1,17 @@
+SURF: <span class="material-symbols-outlined">surfing</span> <p class="palabra-tipo-destino">Surf</p>
+CAMINATA: <span class="material-symbols-outlined">hiking</span> <p class="palabra-tipo-destino">Caminata</p>
+MOUNTAIN: <span class="material-symbols-outlined">landscape</span> <p class="palabra-tipo-destino">Montaña</p>
+BEACH: <span class="material-symbols-outlined">beach_access</span> <p class="palabra-tipo-destino">Playa</p>
+HISTÓRICO: <span class="material-symbols-outlined">castle</span> <p class="palabra-tipo-destino">Histórico</p>
+CIUDAD: <span class="material-symbols-outlined">location_city</span> <p class="palabra-tipo-destino">Ciudad</p>
+SNORKEL Y BUCEO: <span class="material-symbols-outlined">scuba_diving</span> <p class="palabra-tipo-destino">Snorkel/buceo</p>
+VINO: <span class="material-symbols-outlined">wine_bar</span> <p class="palabra-tipo-destino">Vinos</p>
+GASTRONOMÍA: <span class="material-symbols-outlined">restaurant</span> <p class="palabra-tipo-destino">Gastronomía</p>
+CERVEZA: <span class="material-symbols-outlined">sports_bar</span> <p class="palabra-tipo-destino">Cervezas</p>
+RELAX: <span class="material-symbols-outlined">self_improvement</span> <p class="palabra-tipo-destino">Relax</p>
+COMPRAS: <span class="material-symbols-outlined">shopping_cart</span> <p class="palabra-tipo-destino">Compras</p>
+FIESTA: <span class="material-symbols-outlined">nightlife</span> <p class="palabra-tipo-destino">Vida nocturna</p>
+TEMPLO BUDISTA: <span class="material-symbols-outlined">temple_buddhist</span> <p class="palabra-tipo-destino">Templos</p>
+NIEVE: <span class="material-symbols-outlined">ac_unit</span> <p class="palabra-tipo-destino">Nieve</p>
+PARAÍSO: <span class="material-symbols-outlined">spa</span> <p class="palabra-tipo-destino">Paraíso</p>
+

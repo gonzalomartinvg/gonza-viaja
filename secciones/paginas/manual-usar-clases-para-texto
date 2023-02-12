@@ -1,0 +1,16 @@
+Hay diversas clases que le dan estilo al texto de las páginas:
+
+- .parrafo (clase por defecto para todos los párrafos)
+- .bold 
+- .italic
+- .hipervinculo (se usa para los elementos "a" dentro de los parráfos)
+- .hipervinculo-boton
+- .imagen-texto (son las imágenes de las páginas)
+- .achicar-imagen-texto (si la imagen es verticalmente muy grande, aplicamos esto)
+- .contenedor-varias-imagenes (Permite poner dos o más imágenes una al lado de la otra. Se genera un div con esta clase y adentro van las imágenes solamente con la clase .".imagen-texto-varias-imagenes".)
+- .bajada-imagen (son el texto de la bajada de cada imagen)
+- .videos
+- .cartel (por default viene con color rosado, si queremos verde, amarillo o rojo, hay que agregarle un guión medio y el color)
+- .lista (se le aplica al elemento ol)
+- .contenedor-poema-o-declaracion (se crea para colocar dentro los párrafos de poema o declaración)
+- .poema-o-declaracion (se le aplica al párrafo que ya contiene la clase "parrafo")

@@ -1,0 +1,48 @@
+/*MENÚ*/
+
+.contenedor-menu{
+    width: 100%;
+    margin: auto;
+    padding: 1.5rem;
+    display: grid;
+
+    position: fixed;
+    top: 1rem;
+}
+
+.menu{
+    justify-self: end;
+}
+
+@media (max-width: 600px) {
+    .menu{
+        justify-self: center;
+    }
+  }
+
+.elemento-menu{
+    font-size: 2rem;
+    background-color: var(--blanco-1);;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: solid var(--accent-color);
+    color: var(--accent-color);
+    background-color: var(--blanco-2);
+    align-self: center;
+    justify-self: center;
+
+    transition-property: color, border, background-color;
+    transition-duration: 60ms;
+    transition-delay: 60ms;
+    
+}
+
+.elemento-menu:hover{
+    background-color: rgb(236, 234, 234);
+    border: solid var(--primary-color-hard);
+    color: var(--primary-color-hard);
+
+    transition-property: color, border, background-color;
+    transition-duration: 60ms;
+    transition-delay: 60ms;
+}

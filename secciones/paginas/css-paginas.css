@@ -1,0 +1,337 @@
+:root{
+    --primary-color: #0673c6;
+    --primary-color-light: #1993e5;
+    --primary-color-hard: #004695;
+    --secondary-color: #c65906;
+    --secondary-color-light: #e7b452;
+    --accent-color: #ef007e;
+    --blanco-1: #ffff;
+    --blanco-2: #f8f5f5;
+    --gris-1: #e6e3e3;
+    --gris-2: #3f3f3f;
+}
+
+*{ 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gotham', sans-serif;
+}
+
+
+/*HEADER*/
+
+.header{
+    width: 100%;
+    height: 12rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--blanco-1);;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 2rem;
+
+}
+
+@media (max-width: 600px) {
+    .header{
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
+  }
+
+h1{
+    width: 90%;
+    margin: auto;
+    color: var(--blanco-1);;
+    text-align: center;
+    
+}
+
+/*TEXTO*/
+
+.contenedor-texto-relacionados{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+h2{
+    color: var(--gris-2);
+    margin-bottom: 1.5rem;
+}
+
+h3{
+    color: var(--gris-2);
+    margin-bottom: 1.5rem;
+}
+
+.section-texto{
+    width: 90%;
+    margin: auto;
+
+    display: grid;
+}
+
+.parrafo{
+    color: var(--gris-2);
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.bold{
+    font-weight: 700;
+
+}
+
+.hipervinculo{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.hipervinculo:hover{
+    text-decoration-line: underline;
+    color: var(--accent-color);
+}
+
+.hipervinculo-boton{
+    justify-self: center;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--primary-color);
+    border: solid 1px var(--primary-color);
+}
+
+.hipervinculo-boton:hover{
+    color: var(--accent-color);
+    border: solid 1px var(--accent-color);
+}
+
+.imagen-texto{ /*Son las imágenes de las paginas*/
+    width: 110%;
+    max-width: 40rem;
+    min-width: 10rem;
+    justify-self: center;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .imagen-texto{
+        border-radius: 0px;
+    }
+  }
+
+.achicar-imagen-texto{
+    max-width: 25rem;
+    min-width: 10rem;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .achicar-imagen-texto{
+        width: 110%;
+        max-width: 40rem;
+        min-width: 10rem;
+        border-radius: 0px;
+    }
+}
+
+.contenedor-varias-imagenes{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 17rem));
+    justify-content: center;
+}
+
+.imagen-texto-varias-imagenes{
+    width: 17rem;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.bajada-imagen{
+    width: 40%;
+    margin: auto;
+   justify-self: center;
+   margin-top: 0.5rem;
+   font-size: 0.9rem;
+   margin-bottom: 1.5rem;
+   text-align: center;
+}
+
+@media (max-width: 600px) {
+    .bajada-imagen{
+        width: 90%;
+    }
+  }
+
+.videos{
+    width: 560px;
+    height: 315px;
+    justify-self: center;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    .videos{
+        width: 330px;
+        height: 115px;
+    }
+  }
+
+/*LISTAS*/
+
+.lista{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1.5rem;
+}
+
+/*CONTENEDOR POEMA O DECLARACIÓN*/
+
+.contenedor-poema-o-declaracion{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-gap: 1rem;
+    background-color: var(--blanco-1);
+    border-radius: 10px;
+    padding: 1rem;
+    color: var(--accent-color);
+    border: solid 1px var(--accent-color);
+}
+
+.poema-o-declaracion{
+    margin: auto;
+    font-size: 0.8rem;
+    text-align: center;
+    font-style: italic;
+}
+
+/*CARTEL DE AVISO*/
+
+.cartel{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    background-color: var(--blanco-1);
+    border-radius: 10px;
+    padding: 1rem;
+    color: var(--accent-color);
+    border: solid 1px var(--accent-color);
+    text-align: center;
+   
+}
+
+.cartel-amarillo{
+    color: rgb(153, 153, 2);
+    border: solid 1px rgb(207, 207, 21);
+    
+}
+
+.cartel-verde{
+    color: rgb(5, 80, 5);
+    border: solid 1px rgb(16, 172, 16);
+    
+}
+
+.cartel-rojo{
+    color: red;
+    border: solid 1px red;
+    
+}
+
+/*LOS DE ABAJO SON BOTONES SOLO PARA LAS PÁGINAS DE BRASIL QUE CONTIENE LA HISTORIA DE ILHA GRANDE, RÍO Y ETC.*/
+
+.botones-brasil{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    grid-gap: 1rem;
+    justify-content: center;
+}
+
+.boton-brasil{
+    width: fit-content;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: var(--blanco-1);;
+    display: flex;
+    grid-gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.boton-brasil:hover{
+    background-color: var(--primary-color-hard);
+}
+
+
+/*RELACIONADOS*/
+
+.section-relacionados{
+    width: 90%;
+    margin: auto;
+    margin-top: 1.5rem;
+}
+
+.contenedor-relacionados{
+    width: 90%;
+    margin: auto;
+    margin-top: 1.5rem;
+
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(Auto-fill, minmax(17rem, 1fr));
+}
+
+.caja-relacionados{
+    height: 2rem;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    color: var(--blanco-1);;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.caja-relacionados:hover{
+    background-color: var(--primary-color-hard);
+}
+
+/*FOOTER*/
+
+footer{
+    width: 100%;
+    display: grid;
+    margin: auto;
+    margin-top: 2rem;
+    background-color: var(--primary-color);
+    height: 2rem;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    bottom: 1;
+
+}
+
+.copy{
+    color: var(--blanco-1);;
+}
+
+

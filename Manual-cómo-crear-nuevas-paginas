@@ -1,0 +1,35 @@
+Manual 
+
+1) CÓMO CREAR NUEVAS PÁGINAS
+
+. Metas:
+
+a) Completar el meta data NAME y su descripción. Debe poseer palabras claves y simular posibles búsquedas de las personas.
+b) Completar el meta data TITLE también teniendo en cuenta las palabras claves.
+
+. Cuerpo:
+
+c) Cambiar imagen de encabezado, nombre, imágenes y textos. /Para el estilo, se puede utilizar las clases "italic" y "bold" ya establecidas para ganar celeridad./
+
+. Dataset relacionados:
+
+d) Cambiar los dataset de indicador de país e indicador de destino, es clave para que javascript pueda relacionar.
+
+. Modificar javascript
+
+e) Agregar al objeto del país una prop con el nombre del destino. En caso de ser un nuevo país, hay que generar un objeto con el nombre del país y luego agregar los destinos.
+
+Aclaraciones:
+
+-Cada página tiene varias secciones guardadas para elementos autogenerados. Esto sirve para en un futuro poder modificar todas las páginas al mismo tiempo desde javascript (modificar-todas-las-paginas.js).
+
+2) CÓMO CREAR NUEVA PÁGINA DE PAÍS
+
+a) Copiar la estructura html y reemplazar la imagen de la bandera y el nombre
+b) Ir al archivo "relacionados.js" ubicado en la carpeta de "Paginas" y en el apartador 3, ejecutar la función con el nuevo país. Previamente, es necesario crear el objeto de ese país.
+
+3) CÓMO MODIFICAR LA PÁGINA DE TIPS
+
+a) Para agregar continentes o destinos en algún continente hay que modificar los objetos con nombres de continentes del script "tips.js" 
+
+b) Hay que descomentar los continentes en las funciones para que se ejecuten y seguir los pasos que se mencionan en esa página.
