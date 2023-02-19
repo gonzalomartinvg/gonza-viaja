@@ -28,10 +28,14 @@
     transition-duration: 60ms;
 }
 
-.contenedor-nota-individual:hover{
-    transform: rotate(-5deg);
+@media (min-width: 600px) {
 
-    transition-duration: 60ms;
+    .contenedor-nota-individual:hover{
+        transform: rotate(-5deg);
+    
+        transition-duration: 60ms;
+    }
+    
 }
 
 @media (min-width: 730px) { /*Más que 730 pixeles tiene un height específico para que en pantalla grande no quede una nota más grande que otra*/

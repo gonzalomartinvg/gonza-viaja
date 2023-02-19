@@ -109,7 +109,7 @@ function mostrarNotas(a, b, c) {
                     const divAutogenerado = document.createElement("div");
                     const contenidoAutoGenerado = //Las `` siguientes se utilizan para hacer un html literal
                     `
-                    <div class="contenedor-nota-individual" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${rutaFoto}${fotoNota});">
+                    <div class="contenedor-nota-individual" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${rutaFoto}${fotoNota});">
 
                         <h2 class="titulo-nota">${tituloNota}</h2>
 

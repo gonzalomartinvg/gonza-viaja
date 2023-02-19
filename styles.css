@@ -48,15 +48,9 @@ html { /*Esto es para que el footer se quede abajo*/
     margin: auto;
     margin-top: 1.5rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 30% 70%;
     z-index: 1;
 }
-
-@media (max-width: 600px) {
-    .contenedor-principal{
-        grid-template-columns: 1fr;
-    }
-  }
 
 .contenedor-foto-link-insta{
     width: 100%;
@@ -83,7 +77,7 @@ html { /*Esto es para que el footer se quede abajo*/
     transition-delay: 60ms;
 
     position: relative;
-    top: 1rem;
+    top: 2.5rem;
 }
 
 .link-insta:hover{
@@ -117,36 +111,49 @@ html { /*Esto es para que el footer se quede abajo*/
     color: var(--blanco-1);
     font-size: 7rem;
     justify-self: end;
+    text-align: end;
 
     position: relative;
     bottom: 4rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1042px) {
+    .titulo-pagina{
+        
+        font-size: 5rem;
+        
+    }
+}
+
+@media (max-width: 810px) {
+    .titulo-pagina{
+        
+        font-size: 3.5rem;
+        
+    }
+}
+
+@media (max-width: 670px) {
     .imagen-header{
         height: 12rem;
     }
     .imagen-principal{
         width: 12.5rem;
-        justify-self: center;
-        
         position: relative;
-        top: 2rem;
+        bottom: 2rem;
+        
     } 
 
     .titulo-pagina{
         font-size: 2rem;
-        justify-self: center;
-
-        position: relative;
-        bottom: 14rem;
     }
 
     .link-insta{
         font-size: 1rem;
-        justify-self: center;
-
         margin-bottom: 1rem;
+
+        position: relative;
+        top: 1rem;
     }
 
     .fa-instagram{
@@ -213,7 +220,7 @@ html { /*Esto es para que el footer se quede abajo*/
 @media (max-width: 600px) {
     .presentacion{
         text-align: justify;
-        margin-top: 1.5rem;
+        margin-top: 0rem;
     }
   }
 
@@ -244,8 +251,12 @@ html { /*Esto es para que el footer se quede abajo*/
     height: 100%;
 }
 
-.animacion-contenedores :hover{
-    transform: rotate(-2deg);
+@media (min-width: 600px) {
+
+    .animacion-contenedores :hover{
+        transform: rotate(-2deg);
+    }
+    
 }
 
 .contenedor-1{
@@ -268,42 +279,47 @@ html { /*Esto es para que el footer se quede abajo*/
 }
 
 .europa{
-    background-image: url(images-index/europa-01.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images-index/europa-01.jpg);
     background: cover;
-
-    transition-duration: 60ms;
-}
-
-.europa:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images-index/europa-01.jpg);
 
     transition-duration: 60ms;
 }
 
 .organiza-tu-viaje{
-    background-image: url(images-index/organiza-tu-viaje-01.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images-index/organiza-tu-viaje-01.jpg);
     background: cover;
-
-    transition-duration: 60ms;
-}
-
-.organiza-tu-viaje:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images-index/organiza-tu-viaje-01.jpg);
 
     transition-duration: 60ms;
 }
 
 .contenido-exclusivo{
-    background-image: url(images-index/mapa.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images-index/contenido-exclusivo-01.jpg);
     background: cover;
 
     transition-duration: 60ms;
 }
 
-.contenido-exclusivo:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images-index/mapa.jpg);
+@media (min-width: 600px) {
 
-    transition-duration: 60ms;
+    .europa:hover{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images-index/europa-01.jpg);
+    
+        transition-duration: 60ms;
+    }
+
+    .organiza-tu-viaje:hover{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images-index/organiza-tu-viaje-01.jpg);
+    
+        transition-duration: 60ms;
+    }
+
+    
+    .contenido-exclusivo:hover{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images-index/contenido-exclusivo-01.jpg);
+
+        transition-duration: 60ms;
+    }
+    
 }
 
 /*BOTÓN INSTAGRAM*/
