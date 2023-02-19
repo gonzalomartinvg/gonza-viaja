@@ -1,0 +1,74 @@
+/*MODIFICA todas las secciones de noticias del blog y novedades que se encuentran por ejemplo en la página principal, en la página blog y en la Euroviaje 2023*/
+
+.contenedor-todas-las-notas{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 4rem;
+
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(Auto-fill, minmax(25rem, 1fr));
+}
+
+@media (max-width: 700px) {
+    .contenedor-todas-las-notas{
+        grid-template-columns: repeat(Auto-fit, minmax(20rem, 1fr));
+    }
+  }
+
+.contenedor-nota-individual{
+    margin-top: 1.5rem;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0.3rem 0.3rem 0.3rem rgb(99, 99, 99);
+
+    display: grid;
+    grid-gap: 1rem;
+    transition-duration: 60ms;
+}
+
+.contenedor-nota-individual:hover{
+    transform: rotate(-5deg);
+
+    transition-duration: 60ms;
+}
+
+@media (min-width: 730px) { /*Más que 730 pixeles tiene un height específico para que en pantalla grande no quede una nota más grande que otra*/
+    .contenedor-nota-individual{
+        height: 18rem;
+    }
+  }
+
+.titulo-nota{
+    color: var(--blanco-1);
+}
+
+.autor-nota{
+    color: var(--blanco-1);
+    font-style: italic;
+}
+
+.bajada-nota{
+    color: var(--blanco-1);
+    background-color: rgb(6, 115, 198, 0.7);
+    border-radius: 10px;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.boton-leer-mas{
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--blanco-1);
+    justify-self: end;
+    align-self: end;
+}
+
+.boton-leer-mas:hover{
+    background-color: var(--primary-color-hard);
+}

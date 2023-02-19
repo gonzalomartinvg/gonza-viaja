@@ -1,22 +1,19 @@
-:root{
-    --primary-color: #0673c6;
-    --primary-color-light: #1993e5;
-    --primary-color-hard: #004695;
-    --secondary-color: #c65906;
-    --secondary-color-light: #e7b452;
-    --accent-color: #ef007e;
-    --blanco-1: #ffff;
-    --blanco-2: #f8f5f5;
-    --gris-1: #e6e3e3;
-    --gris-2: #3f3f3f;
+/*COLOR SE TOCA DESDE color-y-seteos-generales.css*/
+
+/*BACKGROUND CON TRAMA DE VIAJES*/
+
+body{
+    background-image: url(../../images-index/background-01.jpg);
+    background-size: contain;
 }
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Gotham', sans-serif;
-}
+@media (max-width: 600px) {
+    body{
+        background-image: url(../../images-index/background-01.jpg);
+        background-size: auto;
+    }
+  }
+
 
 html { /*Esto es para que el footer se quede abajo*/
     min-height: 100%;
@@ -42,7 +39,7 @@ html { /*Esto es para que el footer se quede abajo*/
 
 .imagen-header{
     width: 100%;
-    height: 10rem;
+    height: 19rem;
     position: absolute;
 }
 
@@ -61,62 +58,114 @@ html { /*Esto es para que el footer se quede abajo*/
     }
   }
 
-.imagen-principal{
-    width: 12rem;
-    justify-self: start;
-    
+.contenedor-foto-link-insta{
+    width: 100%;
+    margin: auto;
+    display: grid;
 }
 
-.nombre-pais{
-    font-size: 3.5rem;
+.link-insta{
+    width: fit-content;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: solid var(--accent-color);
+    color: var(--accent-color);
+    background-color: var(--blanco-1);
     justify-self: end;
-    align-self: start;
+    align-self: center;
+    display: flex;
+    grid-gap: 1rem;
+
+    transition-property: color, border, background-color;
+    transition-duration: 60ms;
+    transition-delay: 60ms;
+
+    position: relative;
+    top: 1rem;
+}
+
+.link-insta:hover{
+    background-color: rgb(236, 234, 234);
+    border: solid var(--primary-color-hard);
+    color: var(--primary-color-hard);
+
+    transition-property: color, border, background-color;
+    transition-duration: 60ms;
+    transition-delay: 60ms;
+}
+
+.fa-instagram{
+    font-size: 1.8rem;
+}
+
+.nombre-insta{
+    position: relative;
+    top: 0.2rem;
+}
+
+.imagen-principal{
+    margin-top: 2rem;
+    width: 18rem;
+    justify-self: start;
+    border-radius: 50%;
+    border: solid 5px white;
+}
+
+.titulo-pagina{
     color: var(--blanco-1);
+    font-size: 7rem;
+    justify-self: end;
+
+    position: relative;
+    bottom: 4rem;
 }
 
 @media (max-width: 600px) {
     .imagen-header{
-        height: 10rem;
+        height: 12rem;
     }
     .imagen-principal{
+        width: 12.5rem;
         justify-self: center;
+        
+        position: relative;
+        top: 2rem;
+    } 
+
+    .titulo-pagina{
+        font-size: 2rem;
+        justify-self: center;
+
+        position: relative;
+        bottom: 14rem;
+    }
+
+    .link-insta{
+        font-size: 1rem;
+        justify-self: center;
+
         margin-bottom: 1rem;
     }
-    .nombre-pais{
-        font-size: 2.2rem;
+
+    .fa-instagram{
+        display: none;
+        font-size: 1rem;
     }
-  }
-
-/*Menú*/
-
-.elemento-menu{
-    width: 100%;
-    margin: auto;
-
-    display: flex;
-    grid-gap: 0.5rem;
-    text-decoration: none;
+    
+    .nombre-insta{
+        position: relative;
+        top: 0rem;
+    }
 }
-
-.elemento-menu p{
-    font-size: 1.2rem;
-    justify-self: center;
-    align-self: center;
-}
-
-.elemento-menu i{
-    justify-self: center;
-    align-self: center;
-}
-
 
 /*Bloques Generales*/
 
 .bloques{
     width: 90%;
     min-height: 14rem;
-    gap: 1rem;
-    column-gap: 2rem; 
+    grid-gap: 2rem; 
     margin: auto; 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
@@ -124,6 +173,12 @@ html { /*Esto es para que el footer se quede abajo*/
 
 .bloque-1{
    margin-bottom: 4rem;
+}
+
+@media (max-width: 600px) {
+    .bloque-1{
+        margin-bottom: 1.5rem;
+     }
 }
 
 /*Contenedores Generales*/
@@ -139,7 +194,6 @@ html { /*Esto es para que el footer se quede abajo*/
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 0.3rem 0.3rem 0.3rem rgb(99, 99, 99);
-
 }
 
 /*Presentación*/
@@ -150,11 +204,16 @@ html { /*Esto es para que el footer se quede abajo*/
     margin: auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
+
+    border: solid 2px rgba(1, 27, 48, 0.2);
+    border-radius: 10px;
+    padding: 1rem;
 }
 
 @media (max-width: 600px) {
     .presentacion{
         text-align: justify;
+        margin-top: 1.5rem;
     }
   }
 
@@ -187,7 +246,6 @@ html { /*Esto es para que el footer se quede abajo*/
 
 .animacion-contenedores :hover{
     transform: rotate(-2deg);
-    filter: brightness(60%);
 }
 
 .contenedor-1{
@@ -212,11 +270,40 @@ html { /*Esto es para que el footer se quede abajo*/
 .europa{
     background-image: url(images-index/europa-01.jpg);
     background: cover;
+
+    transition-duration: 60ms;
+}
+
+.europa:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images-index/europa-01.jpg);
+
+    transition-duration: 60ms;
 }
 
 .organiza-tu-viaje{
     background-image: url(images-index/organiza-tu-viaje-01.jpg);
     background: cover;
+
+    transition-duration: 60ms;
+}
+
+.organiza-tu-viaje:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images-index/organiza-tu-viaje-01.jpg);
+
+    transition-duration: 60ms;
+}
+
+.contenido-exclusivo{
+    background-image: url(images-index/mapa.jpg);
+    background: cover;
+
+    transition-duration: 60ms;
+}
+
+.contenido-exclusivo:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images-index/mapa.jpg);
+
+    transition-duration: 60ms;
 }
 
 /*BOTÓN INSTAGRAM*/
@@ -242,6 +329,15 @@ html { /*Esto es para que el footer se quede abajo*/
 .boton-insta:hover{
     background-color: var(--primary-color-hard);
     transform: rotate(-2deg);
+}
+
+/*NOVEDADES Y BLOG*/
+
+.titulo-novedades{
+    width: 90%;
+    margin: auto;
+    color: var(--gris-2);
+    margin-top: 1.5rem;
 }
 
 /*FOOTER*/

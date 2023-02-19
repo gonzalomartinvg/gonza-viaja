@@ -1,0 +1,130 @@
+/*COLOR Y SETEOS GENERALES SE MODIFICAN DESDE color-y-seteos-generales.css*/
+
+html { /*Esto es para que el footer se quede abajo*/
+    min-height: 100%;
+    position: relative;
+}
+
+body{
+    background-image: url(../../images-index/background-01.jpg);
+    background-size: contain;
+}
+
+@media (max-width: 600px) {
+    body{
+        background-image: url(../../images-index/background-01.jpg);
+        background-size: auto;
+    }
+}
+
+
+/*HEADER*/
+
+.header{
+    width: 100%;
+    margin: auto;
+    display: grid;
+}
+
+.imagen-header{
+    width: 100%;
+    height: 10rem;
+    position: absolute;
+}
+
+.contenedor-header{
+    width: 90%;
+    margin: auto;
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    z-index: 1;
+}
+
+.foto-circular{
+    width: 12rem;
+    justify-self: start;
+
+    border-radius: 50%;
+    border: solid 3px var(--blanco-1);
+    
+}
+
+.titulo-pagina{
+    font-size: 2.5rem;
+    justify-self: end;
+    align-self: start;
+    text-align: end;
+    color: var(--blanco-1);
+}
+
+@media (max-width: 1040px) {
+    .titulo-pagina{
+        font-size: 1.7rem;
+    }
+  }
+
+@media (max-width: 600px) {
+    .imagen-header{
+        height: 8rem;
+    }
+    .foto-circular{
+        width: 8rem;
+    }
+  }
+
+@media (max-width: 546px) {
+    .titulo-pagina{
+        font-size: 1.3rem;
+    }
+  }
+
+/*MENSAJE DE CONFIRMACIÓN*/
+
+.mensaje-confirmacion{
+    width: 90%;
+    margin: auto;
+    margin-top: 1.5rem;
+    border: solid 1px var(--accent-color);
+    border-radius: 10px;
+    padding: 1rem;
+    display: grid;
+    grid-gap: 1rem;
+    color: var(--gris-2);
+}
+
+.boton-descarga{
+    width: fit-content;
+    background-color: var(--primary-color);
+    color: var(--blanco-1);
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 0.7rem;
+    justify-self: center;
+}
+
+@media (max-width: 546px) {
+    .boton-descarga{
+        justify-self: end;
+    }
+  }
+
+/*FOOTER*/
+
+footer{
+    width: 100%;
+    display: grid;
+    margin: auto;
+    background-color: var(--primary-color);
+    height: 2rem;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+
+}
+
+
+.copy{
+    color: white;
+}

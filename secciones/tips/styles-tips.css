@@ -1,36 +1,54 @@
-:root{
-    --primary-color: #0673c6;
-    --primary-color-light: #1993e5;
-    --primary-color-hard: #004695;
-    --secondary-color: #c65906;
-    --secondary-color-light: #e7b452;
-    --accent-color: #ef007e;
-    --blanco-1: #ffff;
-    --blanco-2: #f8f5f5;
-    --gris-1: #e6e3e3;
-    --gris-2: #3f3f3f;
-}
+/*COLORES Y SETEOS GENERALES SE MODIFICAN DESDE color-y-seteos-generales.css*/
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Gotham', sans-serif;
-}
+/*HEADER*/
 
-/*Header*/
-
-header{
-    width: 90%;
+.header{
+    width: 100%;
     margin: auto;
-    color: var(--gris-2);
+    display: grid;
+    margin-bottom: 6rem;
 }
 
 @media (max-width: 600px) {
-    header{
-        margin-top: 0.5rem;
+    .header{
+        margin-bottom: 4.5rem;
     }
+  }
+
+.imagen-header{
+    width: 100%;
+    height: 10rem;
+    position: absolute;
 }
+
+.titulo-pagina{
+    font-size: 3rem;
+    justify-self: center;
+    align-self: start;
+    color: var(--blanco-1);
+    margin-top: 1.5rem;
+
+    z-index: 1;
+}
+
+@media (max-width: 816px) {
+    .titulo-pagina{
+        font-size: 2rem;
+    }
+  }
+
+@media (max-width: 600px) {
+    .imagen-header{
+        height: 8rem;
+    }
+  }
+
+@media (max-width: 546px) {
+    .nombre-pais{
+        font-size: 1rem;
+    }
+  }
+
 
 /*Subtitulo*/
 
@@ -75,6 +93,7 @@ header{
     width: 90%;
     margin: auto;
     margin-top: 1.5rem;
+    margin-bottom: 2rem;
     display: grid;
     grid-gap: 1rem;
 

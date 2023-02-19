@@ -1,0 +1,214 @@
+/*COLOR Y SETEOS GENERALES SE MODIFICAN DESDE color-y-seteos-generales.css*/
+
+html { /*Esto es para que el footer se quede abajo*/
+    min-height: 100%;
+    position: relative;
+}
+
+body{
+    background-image: url(../../images-index/background-01.jpg);
+    background-size: contain;
+}
+
+@media (max-width: 600px) {
+    body{
+        background-image: url(../../images-index/background-01.jpg);
+        background-size: auto;
+    }
+}
+
+
+/*HEADER*/
+
+.header{
+    width: 100%;
+    margin: auto;
+    display: grid;
+}
+
+.imagen-header{
+    width: 100%;
+    height: 10rem;
+    position: absolute;
+}
+
+.contenedor-header{
+    width: 90%;
+    margin: auto;
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    z-index: 1;
+}
+
+.foto-circular{
+    width: 12rem;
+    justify-self: start;
+
+    border-radius: 50%;
+    border: solid 3px var(--blanco-1);
+    
+}
+
+.titulo-pagina{
+    font-size: 2.5rem;
+    justify-self: end;
+    align-self: start;
+    color: var(--blanco-1);
+}
+
+@media (max-width: 1040px) {
+    .titulo-pagina{
+        font-size: 1.7rem;
+    }
+  }
+
+@media (max-width: 600px) {
+    .imagen-header{
+        height: 8rem;
+    }
+    .foto-circular{
+        width: 8rem;
+    }
+  }
+
+@media (max-width: 630px) {
+    .titulo-pagina{
+        font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width: 442px) {
+    .titulo-pagina{
+        font-size: 1.4rem;
+        text-align: end;
+    }
+  }
+
+
+/*Bloques Generales*/
+
+.bloques{
+    width: 90%;
+    min-height: 14rem;
+    grid-gap: 2rem; 
+    margin: auto; 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+}
+
+@media (max-width: 600px) {
+    .bloques{
+        grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    }
+}
+
+.bloque-1{
+   margin-bottom: 4rem;
+}
+
+@media (max-width: 600px) {
+    .bloque-1{
+        margin-bottom: 1.5rem;
+     }
+}
+
+/*Botones mapas y guías*/
+
+.contenedores{
+
+    background-color: var(--blanco-1);
+    background-size: cover;
+    width: 100%;
+    max-width: 43rem; 
+    min-height: 13rem; 
+    margin: auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0.3rem 0.3rem 0.3rem rgb(99, 99, 99);
+}
+
+/*Botones*/
+
+.animacion-contenedores{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+.animacion-contenedores :hover{
+    transform: rotate(-2deg);
+}
+
+.contenedor-1{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.titulo-botones{
+    font-family: 'Gotham black', sans-serif;
+    font-size: 1.5rem;
+    color: var(--blanco-1);
+}
+
+.texto-botones{
+    font-family: 'Gotham', sans-serif;
+    font-weight: 600;
+    color: var(--blanco-1);
+    align-self: end;
+}
+
+.titulos{
+    width: 90%;
+    margin: auto;
+    color: var(--gris-2);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contenedor-monto-y-boton-pagar{
+    width: 100%;
+    margin: auto;
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.boton-pagar{
+    justify-self: end;
+    align-self: center;
+}
+
+.monto{
+    font-size: 1.5rem;
+    color: var(--blanco-1);
+    align-self: center;
+}
+
+@media (max-width: 600px) {
+    .monto{
+        font-size: 1.2rem;
+    }
+}
+
+/*FOOTER*/
+
+footer{
+    width: 100%;
+    display: grid;
+    margin: auto;
+    background-color: var(--primary-color);
+    height: 2rem;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+
+}
+
+
+.copy{
+    color: white;
+}

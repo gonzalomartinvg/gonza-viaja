@@ -1,0 +1,132 @@
+/*MODIFICA la página principal del blog*/
+
+/*COLOR Y SETEOS BÁSICOS DESDE EL ARCHIVO color-y-seteos-generales.css*/
+
+html { /*Esto es para que el footer se quede abajo*/
+    min-height: 100%;
+    position: relative;
+}
+
+body{
+    background-image: url(../../images-index/background-01.jpg);
+    background-size: contain;
+}
+
+@media (max-width: 600px) {
+    body{
+        background-image: url(../../images-index/background-01.jpg);
+        background-size: auto;
+    }
+}
+
+/*HEADER*/
+
+.header{
+    width: 100%;
+    margin: auto;
+    display: grid;
+}
+
+.imagen-header{
+    width: 100%;
+    height: 10rem;
+    position: absolute;
+}
+
+.contenedor-foto-y-nombre{
+    width: 90%;
+    margin: auto;
+    margin-top: 1.5rem;
+    display: grid;
+    z-index: 1;
+}
+
+.foto-portada{
+    width: 12rem;
+    justify-self: start;
+    border-radius: 50%;
+    border: solid 3px white;
+    
+    
+}
+
+.nombre-pagina{
+    font-size: 3rem;
+    justify-self: end;
+    align-self: start;
+    color: var(--blanco-1);
+    
+}
+
+@media (min-width: 600px) {
+    .nombre-pagina{
+        position: absolute; 
+    }
+  }
+
+@media (max-width: 816px) {
+    .nombre-pagina{
+        font-size: 2rem;
+    }
+  }
+
+@media (max-width: 450px) {
+    .imagen-header{
+        height: 8rem;
+    }
+    .foto-portada{
+        width: 13rem;
+        justify-self: center;
+        
+    }
+  }
+
+@media (max-width: 600px) {
+    .nombre-pagina{
+        justify-self: center;
+        margin-top: 1rem;
+        color: var(--accent-color);
+    }
+  }
+
+/*CONTENEDOR IMAGEN PORTADA E INFO PAÍS*/
+
+.contenedor-presentacion{
+    width: 90%;
+    margin: auto;
+   
+    color: var(--gris-2);
+    
+}
+
+.presentacion{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-gap: 1.5rem;
+}
+
+.presentacion h2{
+    text-align: center;
+}
+
+
+/*FOOTER*/
+
+footer{
+    width: 100%;
+    display: grid;
+    margin: auto;
+    background-color: var(--primary-color);
+    height: 2rem;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+
+}
+
+
+.copy{
+    color: white;
+}

@@ -1,0 +1,16 @@
+1) CREAR NUEVA NOTA
+
+Es igual a crear una página, responde al mismo css. Ver en el manual de cómo crear nuevas páginas.
+
+2) SUMAR UNA NOTA A EL CARROUSEL CON NOVEDADES QUE FIGURA EN LA PÁGINA PRINCIPAL, EN EL BLOG Y EN LA PÁGINA DE EUROVIAJE LOWCOST.
+
+a) Ir a blor-y-novedades.js
+b) Sumar un nuevo elemento al objeto con la información requerida.
+
+Importante para completar el OBJETO: 
+
+- Agregar las novedades arriba y no al final, ya que al reproducirse, muestra primero lo que está más arriba.
+
+- El origen, es el lugar donde guardamos el archivo, sirve para establecer las rutas desde distintas partes de la web. Puede ser "blog" o "paginas".
+
+- Si el texto es de un país, en la url es necesario agregar el país, por ejemplo, maldivas/maafushi.html

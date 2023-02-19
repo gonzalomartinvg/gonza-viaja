@@ -1,0 +1,160 @@
+/*COLOR Y SETEOS GENERALES SE MODIFICAN DESDE color-y-seteos-generales.css*/
+
+html { /*Esto es para que el footer se quede abajo*/
+    min-height: 100%;
+    position: relative;
+}
+
+body{
+    background-image: url(../../images-index/background-01.jpg);
+    background-size: contain;
+}
+
+@media (max-width: 600px) {
+    body{
+        background-image: url(../../images-index/background-01.jpg);
+        background-size: auto;
+    }
+}
+
+
+/*HEADER*/
+
+.header{
+    width: 100%;
+    margin: auto;
+    display: grid;
+}
+
+.imagen-header{
+    width: 100%;
+    height: 10rem;
+    position: absolute;
+}
+
+.contenedor-bandera-y-nombre{
+    width: 90%;
+    margin: auto;
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    z-index: 1;
+}
+
+.bandera-pais{
+    width: 10rem;
+    justify-self: start;
+    
+}
+
+.nombre-pais{
+    font-size: 3rem;
+    justify-self: end;
+    align-self: start;
+    text-align: end;
+    color: var(--blanco-1);
+}
+
+@media (max-width: 816px) {
+    .nombre-pais{
+        font-size: 2rem;
+    }
+  }
+
+@media (max-width: 600px) {
+    .imagen-header{
+        height: 8rem;
+    }
+    .bandera-pais{
+        width: 8rem;
+    }
+  }
+
+@media (max-width: 546px) {
+    .nombre-pais{
+        font-size: 1.5rem;
+    }
+  }
+
+/*CONTENEDOR IMAGEN PORTADA E INFO PAÍS*/
+
+.contenedor-foto-informacion{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    margin-top: 1rem;
+
+    grid-template-columns: repeat(2, minmax(15rem, 1fr));
+    grid-gap: 1rem;
+}
+
+@media (max-width: 900px) {
+    .contenedor-foto-informacion{
+        grid-template-columns: 1fr;
+    }
+  }
+
+.imagen-portada{
+    width: 100%;
+    height: 15rem;
+    size: cover;
+    border-radius: 10px;
+    align-self: center;
+}
+
+@media (max-width: 600px) {
+    .imagen-portada{
+        height: 10rem;
+        width: 100%;
+    }
+  }
+
+.info-pais{
+    width: 100%;
+    display: grid;
+    color: var(--gris-2);
+    grid-gap: 1rem;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .info-pais{
+        text-align: center;
+    }
+  }
+
+
+.bloque{
+    display: grid;
+    grid-gap: 1rem;
+    color: var(--gris-2);
+}
+
+/*CONTENEDOR BLOG*/
+
+.titulo-novedades{
+    width: 90%;
+    margin: auto;
+    color: var(--gris-2);
+    margin-top: 1.5rem;
+}
+
+/*FOOTER*/
+
+footer{
+    width: 100%;
+    display: grid;
+    margin: auto;
+    background-color: var(--primary-color);
+    height: 2rem;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+
+}
+
+
+.copy{
+    color: white;
+}
