@@ -52,6 +52,12 @@ html { /*Esto es para que el footer se quede abajo*/
     z-index: 1;
 }
 
+@media (max-width: 400px) {
+    .contenedor-principal{
+        grid-template-columns: 50% 50%;  
+    }
+}
+
 .contenedor-foto-link-insta{
     width: 100%;
     margin: auto;
@@ -200,7 +206,7 @@ html { /*Esto es para que el footer se quede abajo*/
     margin: auto;
     padding: 1rem;
     border-radius: 1rem;
-    box-shadow: 0.3rem 0.3rem 0.3rem rgb(99, 99, 99);
+    box-shadow: 0.3rem 0.3rem 0.8rem 0.2rem rgb(99, 99, 99);
 }
 
 /*Presentación*/
@@ -212,7 +218,8 @@ html { /*Esto es para que el footer se quede abajo*/
     margin-top: 2rem;
     margin-bottom: 2rem;
 
-    border: solid 2px rgba(1, 27, 48, 0.2);
+    border: solid 2px rgba(40, 46, 51, 0.2);
+    box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     padding: 1rem;
 }

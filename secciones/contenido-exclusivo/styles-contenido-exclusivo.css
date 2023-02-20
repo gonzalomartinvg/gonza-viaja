@@ -103,12 +103,12 @@ body{
     }
 }
 
-.bloque-1{
+.bloques{
    margin-bottom: 4rem;
 }
 
 @media (max-width: 600px) {
-    .bloque-1{
+    .bloques{
         margin-bottom: 1.5rem;
      }
 }
@@ -142,7 +142,7 @@ body{
     }
 }
 
-.contenedor-1{
+.contenedores{
     width: 100%;
     height: 100%;
     display: grid;
@@ -193,6 +193,10 @@ body{
     .monto{
         font-size: 1.2rem;
     }
+}
+
+.bloque-guias{
+    margin-bottom: 6rem;
 }
 
 /*FOOTER*/

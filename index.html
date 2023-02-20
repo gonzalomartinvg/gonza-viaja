@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="color-y-seteos-generales.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="secciones/blog/blog-y-novedades-styles.css">
+    <link rel="stylesheet" href="suscripciones-y-compras/formulario.css">
 </head>
 
 <!-- Google ANALYTICS (gtag.js) -->
@@ -101,7 +102,7 @@
 
     <!-- Fin de botones -->
 
-     <!--CONTENEDOR NOTICIAS DEL BLOG E INFORMACIÓN DESTINOS.-->
+     <!--Contenedor noticias del blog e información destinos.-->
 
      <div class="contenedor-todas-las-notas" data-identificadortipodepagina="paginaprincipal">
 
@@ -110,10 +111,82 @@
 
     </div>
 
+    <!-- FIN Contenedor noticias del blog e información destinos.-->
+
+     <!--Formulario suscripción.-->
+     
+     <div class="contenedor-formulario">
+
+        <h2 class="titulo-formulario">Suscribite</h2>
+
+        <form id="formulario" name="basededatosviajeros"> <!-- Este es el "name" del form del PUNTO 3-->
+
+            <div class="formulario-grupo">
+                <label for="name" class="formulario-label">Nombre</label>
+                <input type="text" id="name" name="nombre" class="formulario-input" placeholder="Ingresá tu nombre" required>
+            </div>
+
+            <div class="formulario-grupo">
+                <label for="email" class="formulario-label">Email</label>
+                <input type="email" id="email" name="email" class="formulario-input" placeholder="Ingresá tu mail" required>
+            </div>
+
+            <div class="formulario-grupo">
+                <label for="tel" class="formulario-label">Teléfono</label>
+                <input type="tel" id="email" name="telefono" class="formulario-input" placeholder="Ingresá tu teléfono" required>
+            </div>
+
+            <div class="formulario-grupo">
+                <label for="interes" class="formulario-label">¿Qué destinos te interesan?</label>
+                <select type="text" id="interes" name="interes" class="formulario-input" required>
+                    <option value="sudamerica">Todos</option>
+                    <option value="europa">Europa</option>
+                    <option value="caribe">Caribe</option>
+                    <option value="asia">Asia</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="brasil">Brasil</option>
+                    <option value="africa">África</option>
+                    <option value="sudamerica">Sudamérica</option>
+                </select>
+            </div>
+
+            <div class="formulario-grupo">
+                <button class="boton-enviar" type="submit">Enviar</button>
+            </div>
+
+            <div id="form_alerts">
+                <!-- Acá va la respuesta del formulario.-->
+            </div>
+
+        </form>
+
+    </div>
+
+    <!-- FIN Formulario suscripción.-->
+
     <footer>
         <p class="copy">© 2023 Gonzalo Volpe Gómez</p>
     </footer>
  
     <script src="secciones/blog/blog-y-novedades.js"></script>
+
+    <!-- Script formulario-->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby4U74aYEs4zGzFWVAcd__ScwvKz8FRsU2Nt6PHzMvWbTW-ry3m_0TxBmfS7FIF38JS0w/exec'
+        const form = document.forms['basededatosviajeros'] //Punto 3
+        
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => $("#form_alerts").html("<div class='alert alert-success'>¡Listo, obtuviste un 10% de descuento. Hace un print de pantalla y mostralo en tu próxima visita.</div>"))
+            .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>El mensaje no fue enviado.</div>"))
+        })
+    </script>
+
+    <!-- Fin script formulario-->
+
 </body>
 </html>
