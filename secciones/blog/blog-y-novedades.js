@@ -47,6 +47,26 @@ const notasBlogYNovedades = {
         }
     ],
 
+    "todas":[
+        {
+            "titulo": "Blog",
+
+            "bajada": "Conoce todos los textos del blog.",
+
+            "origen": "blog",
+
+            "url": "blog.html",
+
+            "foto": "blog.jpg",
+
+            "visibilidad": "europalowcost, paginaprincipal",
+
+            "destacada": "no",
+
+            "autor": "Gonzalo Volpe Gómez y otros"
+        }
+    ],
+
 }
 
 function mostrarNotas(a, b, c) {
@@ -83,6 +103,10 @@ function mostrarNotas(a, b, c) {
             if (a[prop][0].origen == "blog" & b == "paginaprincipal"){
                 rutaFoto = "secciones/blog/images/"
                 rutaUrl = "secciones/blog/entradas/"
+
+                if (a[prop][0].url == "blog.html"){ /*Código exlusivo para el botón que ofrece leer todas las entradas del blog*/
+                    rutaUrl = "secciones/blog/"
+                }
             }
 
             if (a[prop][0].origen == "paginas" & b == "paginaprincipal"){
@@ -93,6 +117,10 @@ function mostrarNotas(a, b, c) {
             if (a[prop][0].origen == "blog" & b == "europalowcost"){
                 rutaFoto = "../blog/images/"
                 rutaUrl = "../blog/entradas/"
+
+                if (a[prop][0].url == "blog.html"){
+                    rutaUrl = "../blog/" /*Código exlusivo para el botón que ofrece leer todas las entradas del blog*/
+                }
             }
 
             if (a[prop][0].origen == "paginas" & b == "europalowcost"){
