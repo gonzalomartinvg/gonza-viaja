@@ -117,7 +117,7 @@
      
      <div class="contenedor-formulario">
 
-        <h2 class="titulo-formulario">Suscribite</h2>
+        <h2 class="titulo-formulario">Obtené gratis un contenido exclusivo para inspirar tus próximos viajes</h2>
 
         <form id="formulario" name="basededatosviajeros"> <!-- Este es el "name" del form del PUNTO 3-->
 
@@ -151,7 +151,7 @@
             </div>
 
             <div class="formulario-grupo">
-                <button class="boton-enviar" type="submit">Enviar</button>
+                <button class="boton-enviar" type="submit">Obtener contenido</button>
             </div>
 
             <div id="form_alerts">
@@ -181,7 +181,7 @@
         form.addEventListener('submit', e => {
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => $("#form_alerts").html("<div class='alert alert-success'>¡Listo, obtuviste un 10% de descuento. Hace un print de pantalla y mostralo en tu próxima visita.</div>"))
+            .then(response => $("#form_alerts").html("<div class='alert alert-success'>Link de tu contenido: <a href='https://bit.ly/3KquPvC'>https://bit.ly/3KquPvC</a></div>"))//Acá indicamos la url para que descargue el contenido exclusivo
             .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>El mensaje no fue enviado.</div>"))
         })
     </script>

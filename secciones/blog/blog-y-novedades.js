@@ -7,7 +7,7 @@
 
 const notasBlogYNovedades = {
     
-    "nota2":[
+    "nota4":[
         {
             "titulo": "El problema del Caribe",
 
@@ -19,7 +19,7 @@ const notasBlogYNovedades = {
 
             "foto": "problema-caribe.jpg",
 
-            "visibilidad": "europalowcost, blog, paginaprincipal",
+            "visibilidad": "blog, paginaprincipal",
 
             "destacada": "no",
 
@@ -27,7 +27,7 @@ const notasBlogYNovedades = {
         }
     ],
 
-    "nota1":[
+    "nota3":[
         {
             "titulo": "Maldivas Lowcost",
 
@@ -39,7 +39,47 @@ const notasBlogYNovedades = {
 
             "foto": "maafushi-1-min.jpg",
 
-            "visibilidad": "europalowcost, blog, paginaprincipal",
+            "visibilidad": "paginaprincipal",
+
+            "destacada": "no",
+
+            "autor": "Gonzalo Volpe Gómez"
+        }
+    ],
+
+    "nota2":[
+        {
+            "titulo": "Ilha Grande",
+
+            "bajada": "Un mismo viaje contado por dos personas que todavía no se conocían. Conoce la visión de Deborah Oliva sobre Ilha Grande.",
+
+            "origen": "blog",
+
+            "url": "ilhagrande-deborah-oliva.html",
+
+            "foto": "ilha-grande-portada-01.jpg",
+
+            "visibilidad": "blog, paginaprincipal",
+
+            "destacada": "no",
+
+            "autor": "Deborah Oliva"
+        }
+    ],
+
+    "nota1":[
+        {
+            "titulo": "¿Por qué el mar?",
+
+            "bajada": "¿Por qué el mar? ¿Qué nos hace sentir? Una revisión profunda de la infancia y el contacto con algo que amo pero que todavía no logro comprender.",
+
+            "origen": "blog",
+
+            "url": "porque-el-mar.html",
+
+            "foto": "porqueelmar-portada.jpg",
+
+            "visibilidad": "blog, paginaprincipal",
 
             "destacada": "no",
 

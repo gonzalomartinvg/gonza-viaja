@@ -9,7 +9,7 @@ divCreado0.classList.add("contenedor-menu"); //Le agregamos la clase necesaria
 const contenidoAutoGenerado0 = //Generamos el contenido del div. Las `` siguientes se utilizan para hacer un html literal
                 `
                 <div class="menu">
-                    <a class="elemento-menu" href="../../../index.html"><i class="fa-solid fa-house"></i></a>
+                    <a class="elemento-menu" href="../../../index.html"><i class="icono-menu fa-solid fa-house"></i></a>
                     <a class="elemento-menu" href="https://www.instagram.com/destino_playas/"><i class="fa-brands fa-instagram"></i></a>
                 </div>
                 `; 

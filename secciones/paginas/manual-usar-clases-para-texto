@@ -1,10 +1,14 @@
 Hay diversas clases que le dan estilo al texto de las páginas:
 
 - .parrafo (clase por defecto para todos los párrafos)
+- .alinear-al-centro (alinear el texto al centro)
+- .centrar (para elementos que no son textos, tipo div, p, etc)
 - .bold 
 - .italic
+- .agrandar-tipografia (Lo usamos por ejemplo en las comillas de las declaraciones de los escritores invitados. Ver escrito ilha grande de Deborah)
 - .hipervinculo (se usa para los elementos "a" dentro de los parráfos)
-- .hipervinculo-boton
+- .boton-general (botones generales)
+- .hipervinculo-boton (boton sin fondo)
 - .imagen-texto (son las imágenes de las páginas)
 - .achicar-imagen-texto (si la imagen es verticalmente muy grande, aplicamos esto)
 - .contenedor-varias-imagenes (Permite poner dos o más imágenes una al lado de la otra. Se genera un div con esta clase y adentro van las imágenes solamente con la clase .".imagen-texto-varias-imagenes".)
@@ -14,3 +18,4 @@ Hay diversas clases que le dan estilo al texto de las páginas:
 - .lista (se le aplica al elemento ol)
 - .contenedor-poema-o-declaracion (se crea para colocar dentro los párrafos de poema o declaración)
 - .poema-o-declaracion (se le aplica al párrafo que ya contiene la clase "parrafo")
+- .mapas

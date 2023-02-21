@@ -82,7 +82,16 @@ h3{
 .parrafo{
     color: var(--gris-2);
     text-align: justify;
+    line-height: 1.5rem;
     margin-bottom: 1.5rem;
+}
+
+.alinear-al-centro{
+    text-align: center;
+}
+
+.centrar{
+    justify-self: center;
 }
 
 .italic{
@@ -91,7 +100,10 @@ h3{
 
 .bold{
     font-weight: 700;
+}
 
+.agrandar-tipografia{ /*Lo usamos por ejemplo en las comillas de las declaraciones de los escritores invitados. Oara ejemplo, ver escrito de Deborah de Ilha Grande*/
+    font-size: 2rem;
 }
 
 .hipervinculo{
@@ -118,6 +130,22 @@ h3{
 .hipervinculo-boton:hover{
     color: var(--accent-color);
     border: solid 1px var(--accent-color);
+}
+
+.boton-general{
+    width: fit-content;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: var(--blanco-1);;
+    display: flex;
+    grid-gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.boton-general:hover{
+    background-color: var(--primary-color-hard);
 }
 
 .imagen-texto{ /*Son las imágenes de las paginas*/
@@ -202,6 +230,24 @@ h3{
     margin: auto;
     margin-bottom: 1.5rem;
 }
+
+/*MAPAS*/
+
+.mapas{
+    width: 30rem;
+    justify-self: center;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 700px) {
+    .mapas{
+        width: 20rem;
+        height: 20rem;
+        justify-self: center;
+        border-radius: 10px;
+    }
+  }
 
 /*CONTENEDOR POEMA O DECLARACIÓN*/
 
@@ -316,6 +362,14 @@ h3{
 
 .caja-relacionados:hover{
     background-color: var(--primary-color-hard);
+}
+
+/*FOTOS DE PERFIL DE ESCRITORES INVITADOS*/
+
+.fotos-de-perfil-escritores{
+    width: 13rem;
+    border-radius: 50%; 
+    border: solid 4px var(--primary-color);
 }
 
 /*FOOTER*/
