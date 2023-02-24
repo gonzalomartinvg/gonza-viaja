@@ -91,7 +91,7 @@ const notasBlogYNovedades = {
         {
             "titulo": "Blog",
 
-            "bajada": "Conoce todos los textos del blog.",
+            "bajada": "Conocé todos los textos del blog.",
 
             "origen": "blog",
 
