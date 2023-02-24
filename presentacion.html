@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="images-index/favicon.png">
+    <title>Gonza, el de Destino Playas</title>
+    <link href="https://fonts.cdnfonts.com/css/gotham?styles=17581,17582,17583,17584,17585,17587,17586,17579,17588,17580,17589,17591,17592,17595,17590,17593,17594,17596" rel="stylesheet">
+    <!-- Para saber cómo nombrar las fuentes acceder a https://www.cdnfonts.com/gotham.font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="menu-paginas-principales.css">
+    <link rel="stylesheet" href="color-y-seteos-generales.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="secciones/blog/blog-y-novedades-styles.css">
+    <link rel="stylesheet" href="suscripciones-y-compras/formulario.css">
+</head>
+
+<!-- Google ANALYTICS (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DL53XPJ1JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DL53XPJ1JN');
+</script>
+
+<body>
+
+    <!-- Encabezado -->
+
+    <header class="header">
+
+        <div class="contenedor-principal">
+
+            <img href="" class="imagen-principal" src="images-index/Screenshot_20230125-093138_Gallery-01.jpg" alt="Imagen Gonzalo">
+
+            <div class="contenedor-foto-link-insta">
+                
+                <h1 class="titulo-pagina">Gonza viaja</h1>
+
+                <a class="link-insta" href="https://www.instagram.com/destino_playas/">
+
+                    <i class="fa-brands fa-instagram"></i>
+                    <p class="nombre-insta">@gonzaviaja</p>
+                </a>
+
+            </div>
+
+        </div>
+
+        <img class="imagen-header" src="images-index/background-02-01-01.png" alt="">
+        
+    </header>
+
+    <!-- Fin de encabezado -->
+
+     <!-- Presentación -->
+
+    <section class="presentacion">
+
+        <h2 class="semi-bold">Sobre mi</h2>
+
+        <p>Soy Lic. en Publicidad, Filmmaker y Desarrollador Web. Mi gran pasión es viajar y gracias a ella descubrí mi vocación: Producir y editar videos. Trabajo hace 10 años en Prensa y Comunicación y soy fundador de la <a class="hipervinculo" href="www.alpagenciadigital">Agencia Digital A Los Pedazos.</a></p>
+
+        <br>
+
+        <p>Podés conocer más sobre mi trabajo en <a class="hipervinculo" href="https://gonzalomartinvg.com/">www.gonzalomartinvg.com</a> y en mi perfil profesional de instagram <a class="hipervinculo" href="https://www.instagram.com/gonza.volpegomez/">@gonza.volpegomez</a></p>
+
+        <br>
+
+        <h2 class="semi-bold">"Viajo para tener historias que contar"</h2>
+
+        <p>A los seis años, en Las Toninas, descubrí una profunda admiración por el mar, por el vaivén de las olas, por la calma que desemboca en caos y por toda la vida que acontece cerca del océano.</p>
+        <br>
+        <p>Llegada la crisis del 2001, dejamos de vacacionar con mi familia y fue en ese entonces que terminé de valorizar esos momentos mágicos que solo suceden cuando estamos en otro lugar, fuera de la rutina, abiertos y sensibles. Estuve toda mi adolescencia y mi adultez temprana, deseando volver a visitar el mar y fue luego de cuatro años de comenzar a trabajar, que me propuse algo impensado para mi, conocer lo que había más allá de Argentina.</p>
+        <br>
+        <p>Recuerdo un día en la facultad, la cual cursaba con compañeros que toda su vida vacacionaron en el exterior, que una de las chicas me aconsejó que cambié de destino y que haga otro viaje porque estaba todo muy caro. Cabezadura, como soy, estuve 3 meses analizando milimétricamente todas las variables para poder hacer mi viaje a las increíbles playas de <a class="hipervinculo" href="secciones/paginas/brasil/buzios.html">Buzios</a> y <a class="hipervinculo" href="secciones/paginas/brasil/arraial-do-cabo.html">Arraial do Cabo</a> El día llegó, estaba por primera vez en un avión y la alegría fue total cuando después de transfers, buses y caminatas, tenía adelante mio la "Praia do Forno", con un azul turquesa que jamás había imaginado. Fue ahí que entendí que mi pasión era viajar, fue ahí que la felicidad clavó bandera.</p>
+        <br>
+        <p>Desde entonces, siempre que puedo viajo y me estimulo más todavía, si el viaje representa un desafío económico y de organización. Por ejemplo, en 2015 logré cumplir mi sueño de conocer el Caribe y en 2017 organicé un <a class="hipervinculo" href="secciones/paginas/maldivas/maafushi.html">viaje Lowcost al paraíso terrenal, las Islas Maldivas.</a> ¿Maldivas Lowcost? También me sonaba rarísimo, pero con voluntad y sobre todo, organización, se puede hacer.</p>
+        <br>
+
+    </section>
+
+    <!-- Fin de presentación -->
+
+    <script src="secciones/blog/blog-y-novedades.js"></script>
+
+    <!-- Script formulario-->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby4U74aYEs4zGzFWVAcd__ScwvKz8FRsU2Nt6PHzMvWbTW-ry3m_0TxBmfS7FIF38JS0w/exec'
+        const form = document.forms['basededatosviajeros'] //Punto 3
+        
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => $("#form_alerts").html("<div class='alert alert-success'>Link de tu contenido: <a href='https://bit.ly/3KquPvC'>https://bit.ly/3KquPvC</a></div>"))//Acá indicamos la url para que descargue el contenido exclusivo
+            .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>El mensaje no fue enviado.</div>"))
+        })
+    </script>
+
+    <!-- Fin script formulario-->
+
+</body>
+</html>

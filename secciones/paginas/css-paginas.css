@@ -72,6 +72,11 @@ h3{
     margin-bottom: 1.5rem;
 }
 
+h4{
+    color: var(--gris-2);
+    margin-bottom: 1.5rem;
+}
+
 .section-texto{
     width: 90%;
     margin: auto;
@@ -96,6 +101,11 @@ h3{
 
 .italic{
     font-style: italic;
+}
+
+.semi-bold{
+    font-weight: 500;
+
 }
 
 .bold{
@@ -149,7 +159,7 @@ h3{
 }
 
 .imagen-texto{ /*Son las imágenes de las paginas*/
-    width: 110%;
+    width: 100%;
     max-width: 40rem;
     min-width: 10rem;
     justify-self: center;
@@ -170,7 +180,7 @@ h3{
 
 @media (max-width: 600px) {
     .achicar-imagen-texto{
-        width: 110%;
+        width: 100%;
         max-width: 40rem;
         min-width: 10rem;
         border-radius: 0px;
@@ -370,6 +380,52 @@ h3{
     width: 13rem;
     border-radius: 50%; 
     border: solid 4px var(--primary-color);
+}
+
+/*ÍNDICES*/
+
+.contenedor-botones-indice{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+}
+
+.botones-indice{
+    height: 1.3rem;
+    font-size: 0.7rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--primary-color);
+    border: solid 1px var(--primary-color);
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.botones-indice:hover{
+    color: var(--accent-color);
+    border: solid 1px var(--accent-color);
+}
+
+/*DIVISIONES*/
+
+.linea-divisoria{
+    background-color: var(--gris-1);
+    width: 100%;
+    height: 0.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.linea-divisoria-pequena{
+    background-color: var(--gris-1);
+    width: 50%;
+    margin: auto;
+    height: 0.2rem;
+    margin-bottom: 1.5rem;
 }
 
 /*FOOTER*/

@@ -96,7 +96,7 @@
         form.addEventListener('submit', e => {
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => $("#form_alerts").html("<div class='alert alert-success'>¡Link: <a href='https://www.google.com/maps/d/edit?mid=1n3_gQV_hUBCLTojNyaG7JLniw-oURG0&usp=share_link'>egfeegegegeg</a></div>")) //Acá indicamos la url para que descargue el contenido exclusivo
+            .then(response => $("#form_alerts").html("<div class='alert alert-success'>¡Link: <a href='../../paginas/megaguias/mega-guia-brasil.html'>Mega Guía de Brasil</a></div>")) //Acá indicamos la url para que descargue el contenido exclusivo
             .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>El mensaje no fue enviado.</div>"))
         })
     </script>

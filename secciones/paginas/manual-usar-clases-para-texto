@@ -19,3 +19,5 @@ Hay diversas clases que le dan estilo al texto de las páginas:
 - .contenedor-poema-o-declaracion (se crea para colocar dentro los párrafos de poema o declaración)
 - .poema-o-declaracion (se le aplica al párrafo que ya contiene la clase "parrafo")
 - .mapas
+- .contenedor-botones-indice (se usa para el div contenedor de los índices, para los botones de adentro se puede usar la clase .caja-relacionados y queda perfecto)
+- .linea-divisoria (línea para dividir información)

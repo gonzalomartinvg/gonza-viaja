@@ -12,6 +12,8 @@
 
 .menu{
     justify-self: end;
+    display: flex;
+    grid-gap: 0.4rem;
 }
 
 @media (max-width: 600px) {
@@ -21,7 +23,6 @@
   }
 
 .elemento-menu{
-    width: fit-content;
     font-size: 2rem;
     background-color: var(--blanco-1);;
     padding: 0.5rem;
@@ -29,8 +30,8 @@
     border: solid var(--accent-color);
     color: var(--accent-color);
     background-color: var(--blanco-2);
-    align-self: center;
-    justify-self: center;
+    text-decoration: none;
+    display: grid;
 
     transition-property: color, border, background-color;
     transition-duration: 60ms;

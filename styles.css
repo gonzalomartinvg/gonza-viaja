@@ -24,9 +24,24 @@ html { /*Esto es para que el footer se quede abajo*/
     font-style: italic;
 }
 
+.semi-bold{
+    font-weight: 500;
+
+}
+
 .bold{
     font-weight: 700;
 
+}
+
+.hipervinculo{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.hipervinculo:hover{
+    text-decoration-line: underline;
+    color: var(--accent-color);
 }
 
 /*Header*/
@@ -185,7 +200,7 @@ html { /*Esto es para que el footer se quede abajo*/
 }
 
 .bloque-1{
-   margin-bottom: 4rem;
+   margin-bottom: 2rem;
 }
 
 @media (max-width: 600px) {
@@ -226,7 +241,7 @@ html { /*Esto es para que el footer se quede abajo*/
 
 @media (max-width: 600px) {
     .presentacion{
-        text-align: justify;
+        text-align: center;
         margin-top: 0rem;
     }
   }
@@ -237,10 +252,22 @@ html { /*Esto es para que el footer se quede abajo*/
     margin-bottom: 1rem;
 }
 
+.presentacion h2{
+    font-family: 'Gotham bold', sans-serif;
+    color: var(--gris-2);
+    margin-bottom: 1rem;
+}
+
 @media (max-width: 600px) {
     .presentacion h1{
         text-align: center;
     }
+
+    .presentacion h2{
+        font-family: 'Gotham bold', sans-serif;
+        color: var(--gris-2);
+        margin-bottom: 1rem;
+    }    
   }
 
 
@@ -383,5 +410,4 @@ footer{
     color: white;
 }
 
-/*TIPS*/
 
