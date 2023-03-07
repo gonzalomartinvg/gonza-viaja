@@ -20,6 +20,8 @@ body{
 
 /*HEADER*/
 
+/*HEADER*/
+
 .header{
     width: 100%;
     margin: auto;
@@ -32,59 +34,80 @@ body{
     position: absolute;
 }
 
-.contenedor-header{
+.contenedor-fotoportada{
     width: 90%;
     margin: auto;
     margin-top: 1.5rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     z-index: 1;
 }
 
-.foto-circular{
-    width: 12rem;
+.foto-portada{
+    width: 9rem;
+    margin-top: 1rem;
     justify-self: start;
-
     border-radius: 50%;
-    border: solid 3px var(--blanco-1);
-    
+    border: solid 3px white;   
 }
 
-.titulo-pagina{
-    font-size: 2.5rem;
-    justify-self: end;
-    align-self: start;
-    color: var(--blanco-1);
-}
-
-@media (max-width: 1040px) {
-    .titulo-pagina{
-        font-size: 1.7rem;
-    }
-  }
 
 @media (max-width: 600px) {
     .imagen-header{
         height: 8rem;
     }
-    .foto-circular{
+    .foto-portada{
         width: 8rem;
+        justify-self: center; 
     }
   }
 
-@media (max-width: 630px) {
-    .titulo-pagina{
-        font-size: 1.2rem;
+/*Contenedor nombre página y presentación*/
+
+.contenedor-presentacion{
+    width: 90%;
+    margin: auto;
+    display: grid;
+   
+    color: var(--gris-2);
+    position: relative;
+    bottom: 2rem;
+    
+}
+
+@media (max-width: 600px) {
+    .contenedor-presentacion{
+        margin-bottom: 2.5rem;
+        position: relative;
+        top: 1.5rem;
     }
   }
 
-  @media (max-width: 442px) {
-    .titulo-pagina{
-        font-size: 1.4rem;
-        text-align: end;
+.nombre-pagina{
+    font-size: 2.5rem;
+    justify-self: center;
+    text-align: center;
+    color: var(--gris-2);
+}
+
+@media (max-width: 600px) {
+    .nombre-pagina{
+        font-size: 2rem;
     }
   }
 
+.presentacion{
+    width: 100%;
+    margin: auto;
+    margin-top: 0.5rem;
+    display: grid;
+    grid-gap: 1.5rem;
+}
+
+.presentacion h3{
+    font-weight: 400;
+    text-align: center;
+    color: var(--gris-3);
+}
 
 /*Bloques Generales*/
 
@@ -166,7 +189,6 @@ body{
     width: 90%;
     margin: auto;
     color: var(--gris-2);
-    margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 }
 

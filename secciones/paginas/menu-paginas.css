@@ -1,5 +1,28 @@
 /*MENÚ*/
 
+.back{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 2rem;
+    padding: 0.1rem;
+    font-weight: bold;
+    color: var(--blanco-1);
+    text-decoration: none;
+    z-index: 1;
+}
+
+.back:hover{
+    color: rgb(216, 213, 213);
+}
+
+@media (min-width: 600px) {
+    .back{
+        top: 2rem;
+        left: 1rem;
+    }
+  }
+
 .contenedor-menu{
     width: 100%;
     margin: auto;
@@ -9,6 +32,14 @@
     position: fixed;
     top: 1rem;
 }
+
+@media (max-width: 600px) {
+    .contenedor-menu{
+        padding: 0.7rem;
+        background-color: rgba(10, 10, 10, 0.096);
+        top: 0rem;
+    }
+  }
 
 .menu{
     justify-self: end;

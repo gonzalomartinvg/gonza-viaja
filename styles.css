@@ -79,7 +79,7 @@ html { /*Esto es para que el footer se quede abajo*/
     display: grid;
 }
 
-.link-insta{
+.link-insta-principal{
     width: fit-content;
     text-decoration: none;
     font-size: 1.2rem;
@@ -159,14 +159,17 @@ html { /*Esto es para que el footer se quede abajo*/
         height: 12rem;
     }
     .imagen-principal{
-        width: 12.5rem;
+        width: 10rem;
         position: relative;
-        bottom: 2rem;
+        bottom: 1rem;
         
     } 
 
     .titulo-pagina{
         font-size: 2rem;
+        position: relative;
+
+        top: -2rem;
     }
 
     .link-insta{
@@ -257,6 +260,8 @@ html { /*Esto es para que el footer se quede abajo*/
     color: var(--gris-2);
     margin-bottom: 1rem;
 }
+
+
 
 @media (max-width: 600px) {
     .presentacion h1{
@@ -409,5 +414,32 @@ footer{
 .copy{
     color: white;
 }
+
+/*BOTÓN BACK PÁGINA DE PRESENTACIÓN*/
+
+.back{
+    position: absolute;
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+    padding: 0.1rem;
+    font-weight: bold;
+    color: var(--blanco-1);
+    text-decoration: none;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.back:hover{
+    color: rgb(216, 213, 213);
+}
+
+@media (max-width: 600px) {
+    .back{
+        margin-top: 0rem;
+    }
+  }
+
+
 
 

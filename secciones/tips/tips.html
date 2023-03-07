@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../../color-y-seteos-generales.css">
     <link rel="stylesheet" href="styles-tips.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="/menu-paginas-principales.css"> <!-- Es el css del menú de las páginas principales, la uso acá para acceder al estilo del menú -->
+    <link rel="stylesheet" href="../style-back-menu.css"> <!-- Es el css del menú de las páginas principales, la uso acá para acceder al estilo del menú -->
 </head>
 
 <!-- Google ANALYTICS (gtag.js) -->
@@ -34,17 +34,27 @@
 
   </section>
 
-  <header>
-    <header class="header">
+  <header class="header">
 
-      <h1 class="titulo-pagina">Tips y consejos</h1>
-     
+      <div class="contenedor-back">
+        <!--Acá va el back generado desde el js "back-menu-js" ubicado en la carpeta secciones-->
+      </div>
+  
+      <div class="contenedor-fotoportada">
+        <img class="foto-portada" src="images/portada-blog-01.jpg" alt="Foto de portada">
+    </div>
 
-      <img class="imagen-header" src="images/background-02-01.png" alt="">
+    <img class="imagen-header" src="images/background-02-01.png" alt="">
       
   </header>
 
-  <h3 class="subtitulo">Elegí un continente y un país</h3>
+  <div class="contenedor-nombre-pagina-y-bajada">
+
+    <h1 class="nombre-pagina">Tips y consejos</h1>
+
+    <h3 class="subtitulo">Elegí un continente y un país</h3>
+
+  </div>
 
   <div class="bloque-continente">
 
@@ -83,6 +93,6 @@
   </div>
     
 <script src="tips.js"></script>
-<script src="/paginas/modificar-todas-las-paginas.js"></script> <!-- Este script es el que modifica los bloques autogenerados de las páginas de los destinos. La uso acá para acceder al script del menú y no hacerlo de nuevo -->
+<script src="../back-menu.js"></script>
 </body>
 </html>

@@ -6,14 +6,7 @@
     width: 100%;
     margin: auto;
     display: grid;
-    margin-bottom: 6rem;
 }
-
-@media (max-width: 600px) {
-    .header{
-        margin-bottom: 4.5rem;
-    }
-  }
 
 .imagen-header{
     width: 100%;
@@ -21,41 +14,60 @@
     position: absolute;
 }
 
-.titulo-pagina{
-    font-size: 3rem;
-    justify-self: center;
-    align-self: start;
-    color: var(--blanco-1);
+.contenedor-fotoportada{
+    width: 90%;
+    margin: auto;
     margin-top: 1.5rem;
-
+    display: grid;
     z-index: 1;
 }
 
-@media (max-width: 816px) {
-    .titulo-pagina{
-        font-size: 2rem;
-    }
-  }
+.foto-portada{
+    width: 9rem;
+    margin-top: 1rem;
+    justify-self: start;
+    border-radius: 50%;
+    border: solid 3px white;   
+}
 
 @media (max-width: 600px) {
     .imagen-header{
         height: 8rem;
     }
-  }
-
-@media (max-width: 546px) {
-    .nombre-pais{
-        font-size: 1rem;
+    .foto-portada{
+        width: 8rem;
+        justify-self: center; 
     }
   }
 
-
 /*Subtitulo*/
 
-.subtitulo{
+.contenedor-nombre-pagina-y-bajada{
     width: 90%;
     margin: auto;
+    display: grid;
+    position: relative;
+    bottom: 2rem;
+}
+
+@media (max-width: 600px) {
+    .contenedor-nombre-pagina-y-bajada{
+        margin-top: 3rem;
+    }
+  }
+
+.nombre-pagina{
+    font-size: 2.5rem;
+    justify-self: center;
+    text-align: center;
     color: var(--gris-2);
+}
+
+.subtitulo{
+    font-weight: 400;
+    text-align: center;
+    color: var(--gris-3);
+    margin-top: 0.5rem;
 }
 
 /*Botones continentes*/
@@ -63,7 +75,6 @@
 .bloque-continente{
     width: 90%;
     margin: auto;
-    margin-top: 1.5rem;
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr))

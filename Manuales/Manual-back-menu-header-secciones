@@ -1,0 +1,12 @@
+Este manual sirve para setear el botón de back y el botón de home de las páginas de secciones (tips, blog, contenido exclusivo, europa low cost) y también sirve para las páginas de los países ubicados dentro de la carpeta tips.
+
+1) Linkear el script "back-menu.js"
+
+2) Linkear el css "style-back-menu.css"
+
+3) Copiar el siguiente código en el header: 
+    <div class="contenedor-back">
+        <!--Acá va el back generado desde el js "back-menu-js" ubicado en la carpeta secciones-->
+    </div>
+
+4) Chequear si el html está linkeado a AwesomeFont porque si no, no va a aparecer el icono de la casa. Link: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">

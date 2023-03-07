@@ -9,9 +9,11 @@
     <link href="https://fonts.cdnfonts.com/css/gotham?styles=17581,17582,17583,17584,17585,17587,17586,17579,17588,17580,17589,17591,17592,17595,17590,17593,17594,17596" rel="stylesheet">
     <!-- Para saber cómo nombrar las fuentes acceder a https://www.cdnfonts.com/gotham.font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="../../color-y-seteos-generales.css">
     <link rel="stylesheet" href="blog-styles.css">
     <link rel="stylesheet" href="blog-y-novedades-styles.css">
+    <link rel="stylesheet" href="../style-back-menu.css">
 </head>
 
 <!-- Google ANALYTICS (gtag.js) -->
@@ -28,9 +30,12 @@
 
     <header class="header">
 
-        <div class="contenedor-foto-y-nombre">
+        <div class="contenedor-back">
+            <!--Acá va el back generado desde el js "back-menu-js" ubicado en la carpeta secciones-->
+        </div>
+
+        <div class="contenedor-fotoportada">
             <img class="foto-portada" src="images/portada-blog-01.jpg" alt="Foto de portada">
-            <h1 class="nombre-pagina">Blog</h1>
         </div>
 
         <img class="imagen-header" src="images/background-02-01.png" alt="">
@@ -46,16 +51,14 @@
     <!--SECTION FOTO E INFORMACIÓN-->
 
     <div class="contenedor-presentacion">
-
         
+        <h1 class="nombre-pagina">Blog</h1>
             
         <div class="presentacion">
-            <h2>Todo lo que nos gusta</h2>
+            <h3>Todo lo que nos gusta</h3>
             <p>¡Hola viajerxs! ¿Cuál fue la última vez que te quedaste con la boca abierta ante algo impresionante? La vida nos regala muchas cosas para disfrutar y las vamos a compartir acá.</p>
             <p>Este blog es un espacio donde vamos a subir mucho contenido de viajes en general, deportes acuáticos, curiosidades, libros, relatos de otros viajeros y muchas más cosas relacionadas con la vida y todo lo que nos gusta de ella.</p>
         </div>
-
-       
 
     </div>
 
@@ -84,7 +87,9 @@
     <footer>
         <p class="copy">© 2023 Gonzalo Volpe Gómez</p>
     </footer>
- 
+
+    
     <script src="blog-y-novedades.js"></script>
+    <script src="../back-menu.js"></script>
 </body>
 </html>

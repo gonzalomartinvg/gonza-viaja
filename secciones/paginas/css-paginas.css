@@ -34,7 +34,7 @@ body{
 
 @media (max-width: 600px) {
     .header{
-        padding-top: 7.5rem;
+        padding-top: 5.5rem;
         padding-bottom: 7.5rem;
         grid-gap: 0.7rem;
     }

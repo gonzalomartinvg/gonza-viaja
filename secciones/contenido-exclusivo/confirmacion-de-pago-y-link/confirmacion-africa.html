@@ -10,8 +10,8 @@
     <!-- Para saber cómo nombrar las fuentes acceder a https://www.cdnfonts.com/gotham.font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="../../../../color-y-seteos-generales.css">
-    <link rel="stylesheet" href="confirmacion-styles.css">
     <link rel="stylesheet" href="../../../suscripciones-y-compras/formulario.css">
+    <link rel="stylesheet" href="confirmacion-styles.css">
 </head>
 
 <!-- Google ANALYTICS (gtag.js) -->
@@ -44,6 +44,12 @@
         <p class="bajada-formulario">Completá el registro y obtené tu contenido exclusivo.</p>
 
         <form id="formulario" name="basededatosviajeros"> <!-- Este es el "name" del form del PUNTO 3-->
+
+            <!-- El input siguiente, brinda la fecha, EL USUARIO NO LO VE-->
+            <input hidden type="text" id="fecha" name="fecha"  value= "">
+
+            <!-- El input siguiente, indica que servicio compró, EL USUARIO NO LO VE-->
+            <input hidden type="tel" id="compra" name="compra" class="formulario-input" value="Mapa África">
 
             <div class="formulario-grupo">
                 <label for="name" class="formulario-label">Nombre</label>
@@ -87,6 +93,8 @@
 
     </div>
 
+    <!-- Script formulario -->
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script>
@@ -96,10 +104,19 @@
         form.addEventListener('submit', e => {
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => $("#form_alerts").html("<div class='alert alert-success'>Link de tu contenido: <a href='https://bit.ly/3Z4rNkJ'>https://bit.ly/3Z4rNkJ</a></div>"))//Acá indicamos la url para que descargue el contenido exclusivo
+            .then(response => $("#form_alerts").html("<div class='mensaje-confirmacion'>Link de tu contenido: <a href='https://bit.ly/3Z4rNkJ'>https://bit.ly/3Z4rNkJ</a></div>"))//Acá indicamos la url para que descargue el contenido exclusivo
             .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>El mensaje no fue enviado.</div>"))
         })
     </script>
+
+    <script> //Genera la fecha del día y se la suma al formulario para que nos llegue en la base de datos
+        date = new Date().toLocaleDateString();
+        document.write(date);
+        let fechaActual = document.getElementById("fecha");
+        fechaActual.value = date;  
+    </script>
+
+    <!-- FIN script formulario -->
 
     <footer>
         <p class="copy">© 2023 Gonzalo Volpe Gómez</p>

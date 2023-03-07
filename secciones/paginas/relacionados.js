@@ -124,6 +124,23 @@ const brasil = {
         }
     ],
 
+    "buzios":[
+        {
+            "nombre": "Buzios (BRA)",
+
+            "url": "buzios.html",
+
+            "tipoDestinoPrimario": "Playa",
+
+            "tipoDestinoSecundario": "",
+
+            "tipoDestinoTerciario": "",
+
+            "tipoDestinoCuaternario": "",
+
+        }
+    ],
+
     "todos":[
         {
             "nombre": "Otros destinos",

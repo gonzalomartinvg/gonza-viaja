@@ -2,5 +2,5 @@ FORMULARIOS
 
 Son dos formularios, uno en la página principal y otro cuando compras. El de la página principal es simple y no tiene script. El otro tiene script porque, después de enviar los datos, muestra un link con el acceso a lo que la persona compró (ej: si compro la guía de brasil es un link, si compro un mapa de áfrica es otro).
 
-1) Instalar formulario: Copiar formulario en html y colocar los scripts del formulario.
+1) Instalar formulario: Copiar formulario en html (se encuentra en la carpeta suscripciones-y-compras y el archivo se llama formulario-codigo.html) y colocar los scripts del formulario.
 2) Si es la confirmación de un destino, ir al mensaje de éxito ubicado en el script y colocar la url correspondiente al contenido que la persona pago.

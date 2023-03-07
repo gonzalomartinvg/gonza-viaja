@@ -17,6 +17,7 @@ body{
     }
 }
 
+/*BACK MENU (se toca desde el css "style-back-menu.css" ubicado en la carpeta secciones*/
 
 /*HEADER*/
 
@@ -32,102 +33,78 @@ body{
     position: absolute;
 }
 
-.contenedor-bandera-y-nombre{
+.contenedor-fotoportada{
     width: 90%;
     margin: auto;
     margin-top: 1.5rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     z-index: 1;
 }
 
-.bandera-pais{
-    width: 10rem;
+.foto-portada{
+    width: 9rem;
+    margin-top: 1rem;
     justify-self: start;
-    
+    border-radius: 50%;
 }
-
-.nombre-pais{
-    font-size: 3rem;
-    justify-self: end;
-    align-self: start;
-    text-align: end;
-    color: var(--blanco-1);
-}
-
-@media (max-width: 816px) {
-    .nombre-pais{
-        font-size: 2rem;
-    }
-  }
 
 @media (max-width: 600px) {
     .imagen-header{
         height: 8rem;
     }
-    .bandera-pais{
+    .foto-portada{
         width: 8rem;
+        justify-self: center; 
     }
   }
 
-@media (max-width: 546px) {
-    .nombre-pais{
-        font-size: 1.5rem;
-    }
-  }
 
-/*CONTENEDOR IMAGEN PORTADA E INFO PAÍS*/
+/*NOMBRE DE PÁGINA Y PRESENTACIÓN*/ 
 
-.contenedor-foto-informacion{
+.contenedor-nombre-pagina-y-bajada{
     width: 90%;
     margin: auto;
     display: grid;
-    margin-top: 1rem;
-
-    grid-template-columns: repeat(2, minmax(15rem, 1fr));
-    grid-gap: 1rem;
 }
 
-@media (max-width: 900px) {
-    .contenedor-foto-informacion{
-        grid-template-columns: 1fr;
-    }
-  }
-
-.imagen-portada{
-    width: 100%;
-    height: 15rem;
-    size: cover;
-    border-radius: 10px;
-    align-self: center;
+.nombre-pagina{
+    font-size: 2.5rem;
+    justify-self: center;
+    color: var(--gris-2);
+    text-align: center;
 }
 
 @media (max-width: 600px) {
-    .imagen-portada{
-        height: 10rem;
-        width: 100%;
+    .nombre-pagina{
+        font-size: 2rem;
+        margin-top: 1rem;
     }
   }
 
-.info-pais{
-    width: 100%;
-    display: grid;
+  .contenedor-presentacion{
+    width: 90%;
+    margin: auto;
+    margin-top: 0.5rem;
     color: var(--gris-2);
-    grid-gap: 1rem;
-    border-radius: 10px;
+    display: grid;
+    grid-gap: 1.5rem;
 }
 
-@media (max-width: 600px) {
-    .info-pais{
-        text-align: center;
-    }
-  }
 
+.contenedor-presentacion h3{
+    font-weight: 400;
+    text-align: center;
+    color: var(--gris-3);
+}
 
-.bloque{
-    display: grid;
-    grid-gap: 1rem;
-    color: var(--gris-2);
+.hipervinculo{
+    font-weight: 800;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.hipervinculo:hover{
+    color: var(--accent-color);
 }
 
 /*CONTENEDOR BLOG*/

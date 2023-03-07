@@ -24,21 +24,13 @@ html { /*Esto es para que el footer se quede abajo*/
     margin: auto;
     margin-top: 1.5rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     z-index: 1;
 }
 
 .bandera-pais{
-    width: 10rem;
-    justify-self: start;
-    
-}
-
-.nombre-pais{
-    font-size: 3.5rem;
-    justify-self: end;
-    align-self: start;
-    color: var(--blanco-1);
+    width: 9rem;
+    margin-top: 1rem;
+    justify-self: start;  
 }
 
 @media (max-width: 600px) {
@@ -47,11 +39,51 @@ html { /*Esto es para que el footer se quede abajo*/
     }
     .bandera-pais{
         width: 8rem;
-    }
-    .nombre-pais{
-        font-size: 2.2rem;
+        justify-self: center;
     }
   }
+
+/*CONTENEDOR NOMBRE PAÍS*/
+
+.contenedor-presentacion{
+    width: 90%;
+    margin: auto;
+    display: grid;
+   
+    color: var(--gris-2);
+    position: relative;
+    bottom: 2rem;
+    
+}
+
+@media (max-width: 600px) {
+    .contenedor-presentacion{
+        margin-bottom: 2.5rem;
+        position: relative;
+        top: 1.5rem;
+    }
+  }
+
+.nombre-pais{
+    font-size: 2.5rem;
+    justify-self: center;
+    text-align: center;
+    color: var(--gris-2);
+}
+
+.presentacion{
+    width: 100%;
+    margin: auto;
+    margin-top: 0.5rem;
+    display: grid;
+    grid-gap: 1.5rem;
+}
+
+.presentacion h3{
+    font-weight: 400;
+    text-align: center;
+    color: var(--gris-3);
+}
 
 /*CONTENEDOR IMAGEN PORTADA E INFO PAÍS*/
 

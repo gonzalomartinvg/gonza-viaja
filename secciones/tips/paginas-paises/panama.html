@@ -8,9 +8,11 @@
     <title>Mejores destinos de Panamá</title>
     <link href="https://fonts.cdnfonts.com/css/gotham?styles=17581,17582,17583,17584,17585,17587,17586,17579,17588,17580,17589,17591,17592,17595,17590,17593,17594,17596" rel="stylesheet">
     <!-- Para saber cómo nombrar las fuentes acceder a https://www.cdnfonts.com/gotham.font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="../../../color-y-seteos-generales.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="styles-paginas-paises.css">
+    <link rel="stylesheet" href="../../style-back-menu.css">
 </head>
 
 <!-- Google ANALYTICS (gtag.js) -->
@@ -27,14 +29,29 @@
 
     <header class="header">
 
+        <div class="contenedor-back">
+            <!--Acá va el back generado desde el js "back-menu-js" ubicado en la carpeta secciones-->
+        </div>
+
         <div class="contenedor-bandera-y-nombre">
             <img class="bandera-pais" src="../images/panama-bandera-02.png" alt="Bandera país">
-            <h1 class="nombre-pais">Panamá</h1>
         </div>
 
         <img class="imagen-header" src="images/background-02-01.png" alt="">
         
     </header>
+
+    <!--TÍTULO PAÍS-->
+
+    <div class="contenedor-presentacion">
+        
+        <h1 class="nombre-pais">Panamá</h1>
+
+        <div class="presentacion">
+            <h3>América</h3>
+        </div>
+
+    </div>
 
     <!--SECTION AUOGENERADOR. Son espacios vacíos para generar html futuro mediante javascript y agregar información a todas las páginas de una sola vez.-->
 
@@ -110,6 +127,7 @@
         <p class="copy">© 2023 Gonzalo Volpe Gómez</p>
     </footer>
  
+    <script src="../../back-menu.js"></script>
     <script src="../../paginas/relacionados.js"></script>
 </body>
 </html>

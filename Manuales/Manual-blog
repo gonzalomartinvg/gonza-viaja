@@ -4,7 +4,8 @@ Es igual a crear una página, responde al mismo css. Ver en el manual de cómo c
 
 2) SUMAR UNA NOTA A EL CARROUSEL CON NOVEDADES QUE FIGURA EN LA PÁGINA PRINCIPAL, EN EL BLOG Y EN LA PÁGINA DE EUROVIAJE LOWCOST.
 
-a) Ir a blor-y-novedades.js
+a) Ir a blog-y-novedades.js
+
 b) Sumar un nuevo elemento al objeto con la información requerida.
 
 Importante para completar el OBJETO: 

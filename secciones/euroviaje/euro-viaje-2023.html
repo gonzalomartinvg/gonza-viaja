@@ -9,9 +9,11 @@
     <link href="https://fonts.cdnfonts.com/css/gotham?styles=17581,17582,17583,17584,17585,17587,17586,17579,17588,17580,17589,17591,17592,17595,17590,17593,17594,17596" rel="stylesheet">
     <!-- Para saber cómo nombrar las fuentes acceder a https://www.cdnfonts.com/gotham.font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="../../color-y-seteos-generales.css">
     <link rel="stylesheet" href="styles-euro-viaje.css">
     <link rel="stylesheet" href="../blog/blog-y-novedades-styles.css">
+    <link rel="stylesheet" href="../style-back-menu.css">
 </head>
 
 <!-- Google ANALYTICS (gtag.js) -->
@@ -28,9 +30,12 @@
 
     <header class="header">
 
-        <div class="contenedor-bandera-y-nombre">
-            <img class="bandera-pais" src="images/europa-bandera-02.png" alt="Bandera país">
-            <h1 class="nombre-pais">Euroviaje 2023</h1>
+       <div class="contenedor-back">
+         <!--Acá va el back generado desde el js "back-menu-js" ubicado en la carpeta secciones-->
+       </div>
+
+        <div class="contenedor-fotoportada">
+            <img class="foto-portada" src="images/europa-bandera-02.png" alt="Bandera país">
         </div>
 
         <img class="imagen-header" src="images/background-02-01.png" alt="">
@@ -43,23 +48,17 @@
 
     </section>
 
-    <!--SECTION FOTO E INFORMACIÓN-->
+    <!--SECTION INFORMACIÓN-->
 
-    <div class="contenedor-foto-informacion">
-
-        <div class="info-pais">
-            
-            <div class="bloque bloque-a">
-                <h2>El Euroviaje Lowcost comienza el 26 de abril</h2>
-                <p>En 2017 logré cumplir el sueño de conocer Maldivas y lo hice con un presupuesto Lowcost. En 2023 me propuse hacer lo mismo con Europa ¿Me acompañas?</p>
-                <p>Podés seguir el día a día y enterarte todo en @destino_playas.</p>
-                <p>Te voy a contar cuánto sale viajar a Europa, dónde dormir, qué podés hacer y cómo lograr que el viaje sea lowcost.</p>
-            </div>
-
-        </div>
-
-        <img class="imagen-portada" src="../blog/images/europa.jpg" alt="Foto del destino">
-
+    <div class="contenedor-nombre-pagina-y-bajada">
+        <h1 class="nombre-pagina">Euroviaje 2023</h1>
+    </div>
+      
+    <div class="contenedor-presentacion">
+        <h3>Comienza el 26 de abril</h3>
+        <p>En 2017 logré cumplir el sueño de conocer Maldivas y lo hice con un presupuesto Lowcost. En 2023 me propuse hacer lo mismo con Europa ¿Me acompañas?</p>
+        <p>Podés seguir el día a día y enterarte todo en <a class="hipervinculo" href="https://www.instagram.com/gonzaviaja/">@gonzaviaja</a></p>
+        <p>Te voy a contar cuánto sale viajar a Europa, dónde dormir, qué podés hacer y cómo lograr que el viaje sea lowcost.</p>
     </div>
 
     <!--SECTION AUOGENERADOR. Son espacios vacíos para generar html futuro mediante javascript y agregar información a todas las páginas de una sola vez.-->
@@ -91,5 +90,6 @@
     </footer>
  
     <script src="../blog/blog-y-novedades.js"></script>
+    <script src="../back-menu.js"></script>
 </body>
 </html>

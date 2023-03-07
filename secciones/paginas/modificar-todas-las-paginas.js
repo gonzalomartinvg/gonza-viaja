@@ -3,14 +3,16 @@
 let sectionAutogenerada0 = document.querySelector(".section-autogenerador-0"); //Seleccionamos el div donde vamos a introducir
 
 const divCreado0 = document.createElement("div"); //Creamos el div a introducir
-
-divCreado0.classList.add("contenedor-menu"); //Le agregamos la clase necesaria
             
 const contenidoAutoGenerado0 = //Generamos el contenido del div. Las `` siguientes se utilizan para hacer un html literal
                 `
-                <div class="menu">
-                    <a class="elemento-menu" href="../../../index.html"><i class="fa-solid fa-house icono-menu"></i></a>
-                    <a class="elemento-menu" href="https://www.instagram.com/destino_playas/"><i class="fa-brands fa-instagram icono-menu"></i></a>
+                <a class="back" href="javascript:history.back()">←</a>
+                
+                <div class="contenedor-menu">
+                    <div class="menu">
+                        <a class="elemento-menu" href="../../../index.html"><i class="fa-solid fa-house icono-menu"></i></a>
+                        <a class="elemento-menu" href="https://www.instagram.com/gonzaviaja/"><i class="fa-brands fa-instagram icono-menu"></i></a>
+                    </div>
                 </div>
                 `; 
 

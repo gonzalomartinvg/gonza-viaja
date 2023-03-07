@@ -33,7 +33,7 @@ body{
     position: absolute;
 }
 
-.contenedor-foto-y-nombre{
+.contenedor-fotoportada{
     width: 90%;
     margin: auto;
     margin-top: 1.5rem;
@@ -42,72 +42,65 @@ body{
 }
 
 .foto-portada{
-    width: 12rem;
+    width: 9rem;
+    margin-top: 1rem;
     justify-self: start;
     border-radius: 50%;
-    border: solid 3px white;
-    
-    
+    border: solid 3px white;   
 }
 
-.nombre-pagina{
-    font-size: 3rem;
-    justify-self: end;
-    align-self: start;
-    color: var(--blanco-1);
-    
-}
 
-@media (min-width: 600px) {
-    .nombre-pagina{
-        position: absolute; 
-    }
-  }
-
-@media (max-width: 816px) {
-    .nombre-pagina{
-        font-size: 2rem;
-    }
-  }
-
-@media (max-width: 450px) {
+@media (max-width: 600px) {
     .imagen-header{
         height: 8rem;
     }
     .foto-portada{
-        width: 13rem;
-        justify-self: center;
-        
+        width: 8rem;
+        justify-self: center; 
     }
   }
+  
 
-@media (max-width: 600px) {
-    .nombre-pagina{
-        justify-self: center;
-        margin-top: 1rem;
-        color: var(--accent-color);
-    }
-  }
-
-/*CONTENEDOR IMAGEN PORTADA E INFO PAÍS*/
+/*CONTENEDOR NOMBRE DE PÁGINA Y PRESENTACION*/
 
 .contenedor-presentacion{
     width: 90%;
     margin: auto;
+    display: grid;
    
     color: var(--gris-2);
+    position: relative;
+    bottom: 2rem;
     
+}
+
+@media (max-width: 600px) {
+    .contenedor-presentacion{
+        margin-bottom: 1.5rem;
+        position: relative;
+        top: 1.5rem;
+    }
+  }
+
+.nombre-pagina{
+    font-size: 2.5rem;
+    justify-self: center;
+    text-align: center;
+    color: var(--gris-2);
 }
 
 .presentacion{
     width: 100%;
     margin: auto;
+    margin-top: 0.5rem;
     display: grid;
     grid-gap: 1.5rem;
 }
 
-.presentacion h2{
+.presentacion h3{
+    font-weight: 400;
     text-align: center;
+    color: var(--gris-3);
 }
 
 /*FOOTER*/

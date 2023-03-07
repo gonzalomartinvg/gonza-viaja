@@ -33,6 +33,9 @@
 
         <form id="formulario" name="basededatosviajeros"> <!-- Este es el "name" del form del PUNTO 3-->
 
+             <!-- El input siguiente, brinda la fecha, EL USUARIO NO LO VE-->
+             <input hidden type="text" id="fecha" name="fecha"  value= "">
+
             <div class="formulario-grupo">
                 <label for="name" class="formulario-label">Name</label>
                 <input type="text" id="name" name="nombre" class="formulario-input" placeholder="Ingresá tu nombre" required>
@@ -78,6 +81,13 @@
             .then(response => $("#form_alerts").html("<div class='alert alert-success'>¡Listo, obtuviste un 10% de descuento. Hace un print de pantalla y mostralo en tu próxima visita.</div>"))
             .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>El mensaje no fue enviado.</div>"))
         })
+    </script>
+
+    <script> //Genera la fecha del día y se la suma al formulario para que nos llegue en la base de datos
+        date = new Date().toLocaleDateString();
+        document.write(date);
+        let fechaActual = document.getElementById("fecha");
+        fechaActual.value = date;  
     </script>
 
     <!-- FIN script formulario -->

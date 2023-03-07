@@ -58,3 +58,43 @@
         justify-self: center;
     }
   }
+
+/*MENSAJE DE CONFIRMACIÓN*/
+
+.mensaje-confirmacion{
+    width: fit-content;
+    margin: auto;
+    border: 1px solid rgb(49, 150, 49);
+    color: rgb(5, 114, 5);
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.mensaje-confirmacion a{
+    text-decoration: none;
+    color: rgb(5, 114, 5);
+    font-weight: 800;
+}
+
+.mensaje-confirmacion a:hover{
+    color: rgb(5, 196, 5);
+    font-weight: 800;
+}
+
+.boton-descarga{
+    width: fit-content;
+    background-color: var(--primary-color);
+    color: var(--blanco-1);
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 0.7rem;
+    justify-self: center;
+}
+
+@media (max-width: 546px) {
+    .boton-descarga{
+        justify-self: end;
+    }
+  }
+
