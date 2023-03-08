@@ -23,10 +23,12 @@ Aclaraciones:
 
 -Cada página tiene varias secciones guardadas para elementos autogenerados. Esto sirve para en un futuro poder modificar todas las páginas al mismo tiempo desde javascript (modificar-todas-las-paginas.js).
 
-2) CÓMO CREAR NUEVA PÁGINA DE PAÍS
+2) CÓMO CREAR NUEVA PÁGINA DE PAÍS (IMPORTANTE: Leer punto D)
 
 a) Copiar la estructura html y reemplazar la imagen de la bandera y el nombre
 b) Ir al archivo "relacionados.js" ubicado en la carpeta de "Paginas" y en el apartador 3, ejecutar la función con el nuevo país. Previamente, es necesario crear el objeto de ese país.
+d) Ir a la home y agregar el nombre del país y un div "relacionados" para que aparezca en la página principal.
+
 
 3) CÓMO MODIFICAR LA PÁGINA DE TIPS
 

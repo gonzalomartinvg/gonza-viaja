@@ -97,11 +97,11 @@ html { /*Esto es para que el footer se quede abajo*/
     transition-duration: 60ms;
     transition-delay: 60ms;
 
-    position: relative;
-    top: 2.5rem;
+    position: absolute;
+    top: 15rem;
 }
 
-.link-insta:hover{
+.link-insta-principal:hover{
     background-color: rgb(236, 234, 234);
     border: solid var(--primary-color-hard);
     color: var(--primary-color-hard);
@@ -154,14 +154,14 @@ html { /*Esto es para que el footer se quede abajo*/
     }
 }
 
-@media (max-width: 670px) {
+@media (max-width: 672px) {
     .imagen-header{
-        height: 12rem;
+        height: 10rem;
     }
     .imagen-principal{
         width: 10rem;
         position: relative;
-        bottom: 1rem;
+        bottom: 2rem;
         
     } 
 
@@ -169,15 +169,12 @@ html { /*Esto es para que el footer se quede abajo*/
         font-size: 2rem;
         position: relative;
 
-        top: -2rem;
+        top: -4rem;
     }
 
-    .link-insta{
+    .link-insta-principal{
+        top: 8rem;
         font-size: 1rem;
-        margin-bottom: 1rem;
-
-        position: relative;
-        top: 1rem;
     }
 
     .fa-instagram{
@@ -233,7 +230,7 @@ html { /*Esto es para que el footer se quede abajo*/
     width: 90%;
     height: fit-content;
     margin: auto;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     margin-bottom: 2rem;
 
     border: solid 2px rgba(40, 46, 51, 0.2);
@@ -242,10 +239,10 @@ html { /*Esto es para que el footer se quede abajo*/
     padding: 1rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 672px) {
     .presentacion{
         text-align: center;
-        margin-top: 0rem;
+        margin-top: -1rem;
     }
   }
 
@@ -395,13 +392,61 @@ html { /*Esto es para que el footer se quede abajo*/
     margin-top: 1.5rem;
 }
 
+/*RECOMENDACIONES*/
+
+.titulo-recomendaciones{
+    width: 90%;
+    margin: auto;
+    color: var(--gris-2);
+}
+
+.contenedor-todas-las-recomendaciones{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 5rem;
+}
+
+.titulo-recomendaciones-pais{
+    width: 90%;
+    font-size: 1.2rem;
+    margin: auto;
+    color: var(--gris-2);
+    margin-top: 1.5rem;
+}
+
+.contenedor-relacionados{
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(Auto-fill, minmax(15rem, 1fr));
+}
+
+.caja-relacionados{
+    height: 1.5rem;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    color: var(--blanco-1);;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.caja-relacionados:hover{
+    background-color: var(--primary-color-hard);
+}
+
 /*FOOTER*/
 
 footer{
     width: 100%;
     display: grid;
     margin: auto;
-    margin-top: 2rem;
     background-color: var(--primary-color);
     height: 2rem;
     justify-items: center;
