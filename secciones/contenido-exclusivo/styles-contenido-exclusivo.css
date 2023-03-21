@@ -6,13 +6,13 @@ html { /*Esto es para que el footer se quede abajo*/
 }
 
 body{
-    background-image: url(../../images-index/background-01.jpg);
+    background-image: url(../../images-index/background-01.webp);
     background-size: contain;
 }
 
 @media (max-width: 600px) {
     body{
-        background-image: url(../../images-index/background-01.jpg);
+        background-image: url(../../images-index/background-01.webp);
         background-size: auto;
     }
 }
@@ -103,7 +103,7 @@ body{
     grid-gap: 1.5rem;
 }
 
-.presentacion h3{
+.presentacion h2{
     font-weight: 400;
     text-align: center;
     color: var(--gris-3);

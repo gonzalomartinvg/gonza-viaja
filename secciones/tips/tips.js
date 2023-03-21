@@ -8,9 +8,9 @@ const america = {
 
             "url": "paginas-paises/brasil.html",
 
-            "imagenBandera": "images/brasil-bandera-02.png",
+            "imagenBandera": "images/brasil-bandera-02.webp",
             
-            "imagenDestino": "images/brasil-02.jpg",
+            "imagenDestino": "images/brasil-02.webp",
         }
     ],
 
@@ -20,9 +20,9 @@ const america = {
 
             "url": "paginas-paises/mexico.html",
 
-            "imagenBandera": "images/mexico-bandera-02.png",
+            "imagenBandera": "images/mexico-bandera-02.webp",
             
-            "imagenDestino": "images/mexico-02.jpg",
+            "imagenDestino": "images/mexico-02.webp",
         }
     ],
 
@@ -32,9 +32,9 @@ const america = {
 
             "url": "paginas-paises/colombia.html",
 
-            "imagenBandera": "images/colombia-bandera-02.png",
+            "imagenBandera": "images/colombia-bandera-02.webp",
             
-            "imagenDestino": "images/colombia-02.jpg",
+            "imagenDestino": "images/colombia-02.webp",
         }
     ],
 
@@ -44,9 +44,9 @@ const america = {
 
             "url": "paginas-paises/argentina.html",
 
-            "imagenBandera": "images/argentina-bandera-02.png",
+            "imagenBandera": "images/argentina-bandera-02.webp",
             
-            "imagenDestino": "images/argentina-02.jpg",
+            "imagenDestino": "images/argentina-02.webp",
         }
     ],
 
@@ -56,9 +56,9 @@ const america = {
 
             "url": "paginas-paises/uruguay.html",
 
-            "imagenBandera": "images/uruguay-bandera-02.png",
+            "imagenBandera": "images/uruguay-bandera-02.webp",
             
-            "imagenDestino": "images/uruguay-02.jpg",
+            "imagenDestino": "images/uruguay-02.webp",
         }
     ],
 
@@ -68,9 +68,9 @@ const america = {
 
             "url": "paginas-paises/panama.html",
 
-            "imagenBandera": "images/panama-bandera-02.png",
+            "imagenBandera": "images/panama-bandera-02.webp",
             
-            "imagenDestino": "images/panama-02.jpg",
+            "imagenDestino": "images/panama-02.webp",
         }
     ],
 
@@ -84,9 +84,9 @@ const asia = {
 
             "url": "paginas-paises/maldivas.html",
 
-            "imagenBandera": "images/maldivas-bandera-02.png",
+            "imagenBandera": "images/maldivas-bandera-02.webp",
             
-            "imagenDestino": "images/maldivas-02.jpg",
+            "imagenDestino": "images/maldivas-02.webp",
         }
     ],
 
@@ -96,9 +96,9 @@ const asia = {
 
             "url": "paginas-paises/tailandia.html",
 
-            "imagenBandera": "images/tailandia-bandera-02.png",
+            "imagenBandera": "images/tailandia-bandera-02.webp",
             
-            "imagenDestino": "images/tailandia-02.jpg",
+            "imagenDestino": "images/tailandia-02.webp",
         }
     ],
 
@@ -108,9 +108,9 @@ const asia = {
 
             "url": "paginas-paises/malasia.html",
 
-            "imagenBandera": "images/malasia-bandera-02.png",
+            "imagenBandera": "images/malasia-bandera-02.webp",
             
-            "imagenDestino": "images/malasia-02.jpg",
+            "imagenDestino": "images/malasia-02.webp",
         }
     ],
 
@@ -119,30 +119,17 @@ const asia = {
 
 const europa = {
     
-    "NO HAY PAÍS AÚN":[
+    "espana":[
         {
-            "nombre": "No hay país aún en Europa",
+            "nombre": "España",
 
-            "url": "",
+            "url": "paginas-paises/espana.html",
 
-            "imagenBandera": "",
+            "imagenBandera": "images/espana-bandera-02.webp",
             
-            "imagenDestino": "",
+            "imagenDestino": "images/espana-02.webp",
         }
     ],
-
-    "NO HAY PAÍS AÚN":[
-        {
-            "nombre": "No hay país aún en Europa",
-
-            "url": "",
-
-            "imagenBandera": "",
-            
-            "imagenDestino": "",
-        }
-    ],
-
 }
 
 const africa = {
@@ -246,9 +233,9 @@ function mostrarPaisesDelContinenteElegido(a){
 
  //Ejecutamos la función con todos los continentes (los comentados son porque todavía no los visité)
 
- mostrarPaisesDelContinenteElegido(asia)
- mostrarPaisesDelContinenteElegido(america);
-//  mostrarPaisesDelContinenteElegido(europa);
+mostrarPaisesDelContinenteElegido(asia)
+mostrarPaisesDelContinenteElegido(america);
+mostrarPaisesDelContinenteElegido(europa);
 //  mostrarPaisesDelContinenteElegido(africa)
 //  mostrarPaisesDelContinenteElegido(oceania);
 
@@ -282,13 +269,13 @@ function clickEnBotonContinente (a) {
 
             mostrarPaisesDelContinenteElegido(asia)
             mostrarPaisesDelContinenteElegido(america)
-            // mostrarPaisesDelContinenteElegido(europa);
+            mostrarPaisesDelContinenteElegido(europa);
             // mostrarPaisesDelContinenteElegido(africa)
             // mostrarPaisesDelContinenteElegido(oceania);
 
         }
 
-        //Los continentes de abajo todavía no los visité, para activarlos, hay que agregar info al objeto con el nombre del continente y a su vez, hay que habilitar para que se vean los botones mediante el css "styles-tips.css" cambiando el display:none de las clases "africa" y "oceania". También hay que modificar el condicional anterior "continenteElegido.dataset.nombrecontinente == "todos"", ejecutando las funciones por los nuevos continentes. Por último, hay que ejecutar las funciones del punto 2 con los continentes agregados y esta función lo mismo.
+        //Los continentes de abajo todavía no los visité, para activarlos, hay que agregar info al objeto con el nombre del continente y a su vez, hay que habilitar para que se vean los botones mediante el css "styles-tips.css" cambiando el display:none de las clases "africa" y "oceania". También hay que modificar el condicional anterior "continenteElegido.dataset.nombrecontinente == "todos"", ejecutando las funciones por los nuevos continentes. Por último, hay que ejecutar las funciones del punto 2 con los continentes agregados.
 
         if (continenteElegido.dataset.nombrecontinente == "africa"){
             mostrarPaisesDelContinenteElegido(africa)

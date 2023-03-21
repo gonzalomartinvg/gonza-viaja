@@ -5,6 +5,16 @@ html { /*Esto es para que el footer se quede abajo*/
     position: relative;
   }
 
+.hipervinculo{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.hipervinculo:hover{
+    text-decoration-line: underline;
+    color: var(--accent-color);
+}
+
 /*HEADER*/
 
 .header{
@@ -29,6 +39,7 @@ html { /*Esto es para que el footer se quede abajo*/
 
 .bandera-pais{
     width: 9rem;
+    border-radius: 50%;
     margin-top: 1rem;
     justify-self: start;  
 }

@@ -555,6 +555,7 @@ const uruguay = {
     ]
 }
 
+//Buscar una propiedad de los objetos, ejemplo: console.log(uruguay["colonia-del-sacramento"][0].nombre). Uruguay es un objeto que tiene propiedades, como por ejemplo "colonia-del-sacramento" que es un array que comienza y termina con [], y que adentro de ese array tiene un objeto con diversas propiedades como por ejemplo: nombre, url, tipoDestinoPrimario, etc. La posición 0 indica el índice del array que es "colonia-del-sacramento". Si le queremos agregar otro objeto al array "colonia-del-sacramento" lo podríamos hacer y buscarlo por el índice 1.
 
 //APARTADO 2: Relacionados
 

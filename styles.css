@@ -3,13 +3,13 @@
 /*BACKGROUND CON TRAMA DE VIAJES*/
 
 body{
-    background-image: url(../../images-index/background-01.jpg);
+    background-image: url(../../images-index/background-01.webp);
     background-size: contain;
 }
 
 @media (max-width: 600px) {
     body{
-        background-image: url(../../images-index/background-01.jpg);
+        background-image: url(../../images-index/background-01.webp);
         background-size: auto;
     }
   }
@@ -315,21 +315,21 @@ html { /*Esto es para que el footer se quede abajo*/
 }
 
 .europa{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images-index/europa-01.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images-index/europa-01.webp);
     background: cover;
 
     transition-duration: 60ms;
 }
 
 .organiza-tu-viaje{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images-index/organiza-tu-viaje-01.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images-index/organiza-tu-viaje-01.webp);
     background: cover;
 
     transition-duration: 60ms;
 }
 
 .contenido-exclusivo{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images-index/contenido-exclusivo-01.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images-index/contenido-exclusivo-01.webp);
     background: cover;
 
     transition-duration: 60ms;
@@ -338,20 +338,20 @@ html { /*Esto es para que el footer se quede abajo*/
 @media (min-width: 600px) {
 
     .europa:hover{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images-index/europa-01.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images-index/europa-01.webp);
     
         transition-duration: 60ms;
     }
 
     .organiza-tu-viaje:hover{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images-index/organiza-tu-viaje-01.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images-index/organiza-tu-viaje-01.webp);
     
         transition-duration: 60ms;
     }
 
     
     .contenido-exclusivo:hover{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images-index/contenido-exclusivo-01.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images-index/contenido-exclusivo-01.webp);
 
         transition-duration: 60ms;
     }

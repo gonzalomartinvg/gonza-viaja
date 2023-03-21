@@ -6,6 +6,26 @@
 //IMPORTANTE: Agregar las nuevas notas en la parte superior del objeto porque sino en las páginas donde muestra la sección levanta la más antigua primero.
 
 const notasBlogYNovedades = {
+
+    "nota5":[
+        {
+            "titulo": "Trucos para pagar menos los vuelos",
+
+            "bajada": "Conocé cuatro prácticas que si las implementás cuando buscás y comprás vuelos, te van a permitir ahorrar muchísimo dinero.",
+
+            "origen": "blog",
+
+            "url": "trucos-para-pagar-menos-los-vuelos.html",
+
+            "foto": "portada-truco-vuelos-baratos.webp",
+
+            "visibilidad": "blog, europalowcost, paginaprincipal",
+
+            "destacada": "no",
+
+            "autor": "Gonzalo Volpe Gómez"
+        }
+    ],
     
     "nota4":[
         {
@@ -17,7 +37,7 @@ const notasBlogYNovedades = {
 
             "url": "problema-del-caribe.html",
 
-            "foto": "problema-caribe.jpg",
+            "foto": "problema-caribe.webp",
 
             "visibilidad": "blog, paginaprincipal",
 
@@ -37,7 +57,7 @@ const notasBlogYNovedades = {
 
             "url": "maldivas/maafushi.html",
 
-            "foto": "maafushi-1-min.jpg",
+            "foto": "maafushi-1-min.webp",
 
             "visibilidad": "paginaprincipal",
 
@@ -57,7 +77,7 @@ const notasBlogYNovedades = {
 
             "url": "ilhagrande-deborah-oliva.html",
 
-            "foto": "ilha-grande-portada-01.jpg",
+            "foto": "ilha-grande-portada-01.webp",
 
             "visibilidad": "blog, paginaprincipal",
 
@@ -77,7 +97,7 @@ const notasBlogYNovedades = {
 
             "url": "porque-el-mar.html",
 
-            "foto": "porqueelmar-portada.jpg",
+            "foto": "porqueelmar-portada.webp",
 
             "visibilidad": "blog, paginaprincipal",
 
@@ -97,7 +117,7 @@ const notasBlogYNovedades = {
 
             "url": "blog.html",
 
-            "foto": "blog.jpg",
+            "foto": "blog.webp",
 
             "visibilidad": "europalowcost, paginaprincipal",
 

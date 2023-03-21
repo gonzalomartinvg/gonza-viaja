@@ -14,4 +14,4 @@ FIESTA: <span class="material-symbols-outlined">nightlife</span> <p class="palab
 TEMPLO BUDISTA: <span class="material-symbols-outlined">temple_buddhist</span> <p class="palabra-tipo-destino">Templos</p>
 NIEVE: <span class="material-symbols-outlined">ac_unit</span> <p class="palabra-tipo-destino">Nieve</p>
 PARAÍSO: <span class="material-symbols-outlined">spa</span> <p class="palabra-tipo-destino">Paraíso</p>
-
+ARTE: <span class="material-symbols-outlined">palette</span> <p class="palabra-tipo-destino">Arte</p>

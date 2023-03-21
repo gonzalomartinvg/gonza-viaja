@@ -3,13 +3,13 @@
 /*BACKGROUND CON TRAMA DE VIAJES*/
 
 body{
-    background-image: url(../../images-index/background-01.jpg);
+    background-image: url(../../images-index/background-01.webp);
     background-size: contain;
 }
 
 @media (max-width: 600px) {
     body{
-        background-image: url(../../images-index/background-01.jpg);
+        background-image: url(../../images-index/background-01.webp);
         background-size: auto;
     }
   }
