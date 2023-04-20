@@ -52,10 +52,11 @@ html { /*Esto es para que el footer se quede abajo*/
     display: grid;
 }
 
-.imagen-header{
+.imagen-header{ /*Es la foto background del header*/
     width: 100%;
     height: 19rem;
     position: absolute;
+    top: 0;
 }
 
 .contenedor-principal{
@@ -67,9 +68,9 @@ html { /*Esto es para que el footer se quede abajo*/
     z-index: 1;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 768px) {
     .contenedor-principal{
-        grid-template-columns: 50% 50%;  
+        grid-template-columns: 1fr;  
     }
 }
 
@@ -82,28 +83,28 @@ html { /*Esto es para que el footer se quede abajo*/
 .link-insta-principal{
     width: fit-content;
     text-decoration: none;
-    font-size: 1.2rem;
-    padding: 0.5rem;
+    font-size: 1rem;
+    padding: 0.3rem;
     border-radius: 10px;
-    border: solid var(--accent-color);
+    border: solid 2px var(--accent-color);
     color: var(--accent-color);
     background-color: var(--blanco-1);
     justify-self: end;
     align-self: center;
     display: flex;
-    grid-gap: 1rem;
+    grid-gap: 0.3rem;
 
     transition-property: color, border, background-color;
     transition-duration: 60ms;
     transition-delay: 60ms;
 
     position: absolute;
-    top: 15rem;
+    top: 12rem;
 }
 
 .link-insta-principal:hover{
     background-color: rgb(236, 234, 234);
-    border: solid var(--primary-color-hard);
+    border: solid 2px var(--primary-color-hard);
     color: var(--primary-color-hard);
 
     transition-property: color, border, background-color;
@@ -112,17 +113,15 @@ html { /*Esto es para que el footer se quede abajo*/
 }
 
 .fa-instagram{
-    font-size: 1.8rem;
+    font-size: 1.3rem;
 }
 
 .nombre-insta{
-    position: relative;
-    top: 0.2rem;
+    align-self: center;
 }
 
 .imagen-principal{
-    margin-top: 2rem;
-    width: 18rem;
+    width: 13rem;
     justify-self: start;
     border-radius: 50%;
     border: solid 5px white;
@@ -135,57 +134,195 @@ html { /*Esto es para que el footer se quede abajo*/
     text-align: end;
 
     position: relative;
-    bottom: 4rem;
+    bottom: 3.5rem;
 }
 
-@media (max-width: 1042px) {
+@media (max-width: 1100px) {
     .titulo-pagina{
-        
-        font-size: 5rem;
-        
+        font-size: 5rem;    
     }
 }
 
-@media (max-width: 810px) {
-    .titulo-pagina{
-        
-        font-size: 3.5rem;
-        
+@media (max-width: 768px) {
+    .titulo-pagina{   
+        display: none;  
     }
-}
 
-@media (max-width: 672px) {
     .imagen-header{
-        height: 10rem;
+        height: 14rem;
     }
     .imagen-principal{
-        width: 10rem;
+        width: 12rem;
+        justify-self: center;
         position: relative;
-        bottom: 2rem;
+        bottom: 1rem;
+        margin-bottom: 1rem;
         
     } 
 
-    .titulo-pagina{
-        font-size: 2rem;
-        position: relative;
-
-        top: -4rem;
-    }
-
     .link-insta-principal{
-        top: 8rem;
-        font-size: 1rem;
-    }
-
-    .fa-instagram{
-        display: none;
-        font-size: 1rem;
+        justify-self: center;
+        position: relative;
+        top: -1.6rem;
+        padding: 0.2rem;
     }
     
-    .nombre-insta{
-        position: relative;
-        top: 0rem;
-    }
+}
+
+/* MENÚ */
+
+.container-menu{
+    width: 100%;
+    margin: auto;
+    display: grid;
+}
+
+/*Configuración para Móvil*/
+
+/*Trabajamos el botón de tres líneas*/
+
+.contenedor-menu-movil{
+    width: 90%;
+    margin: auto;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    background-color: transparent;
+    z-index: 2;
+}
+
+.titulo-menu-movil{
+    color: var(--blanco-1);
+    font-size: 1.8rem;
+}
+
+.bars-menu{ /*Es el contenedor del menú superior derecho con las tres líneas*/
+    width: 30px; /*Le decimos que tenga ancho de 30px*/
+    height: 30px; /*Le decimos que tenga alto de 30px*/
+    cursor: pointer; /*Le indicamos que al pasar el cursor por arriba se active la manito de clickeable*/
+    justify-self: end;
+}
+
+.bars-menu span{ /*Con los span estamos haciendo las líneas del menú hamburguesa*/
+    display: block; /*Los span, naturalmente no viene con propiedad en bloque, si no, en línea*/
+    width: 100%; /*Le indicamos que ocupe el 100% de su padre, es decir el ".bars-menu"*/
+    height: 3px; /*Cada línea va a tener 2px de alto*/
+    background-color: var(--blanco-1);
+    border-radius: 10px;
+    margin-top: 6px; /*Separamos a las líneas*/
+    transform-origin: 0px 100%; /*Hace que las líneas de los span se mantengan en su eje original al rotar*/
+    transition: all 600ms; /*Indicamos la velocidad de transición a su nueva posición*/
+
+}
+
+/*ACLARACIÓN JAVASCRIPT: Hasta el momento habíamos definido el contenedor del menú hamburguesa en ".bars-menu" y las 3 líneas con ".bars-menu span".
+Ahora, vamos a indicarle una animación. Para esto, generamos una clase específica que vamos a referenciar dsp en Javascript y que no esta nombrada
+en el html. Por ejemplo, acá las llamé igual que las clases que le dimos en html, pero agregandole ACTIVE adelante*/
+
+.active-line1-bars-menu{ /*A partir de acá le damos animación para que cuando clickeemos en el menú se convierta en una cruz*/
+    transform: rotate(45deg) translate(-2px, 1px); /*Le indicamos que la línea 1 rote 45 grados y que se translade hasta una posición que quede bien*/
+
+}
+
+.active-line3-bars-menu{ /*A partir de acá le damos animación para que cuando clickeemos en el menú se convierta en una cruz*/
+    transform: rotate(-45deg) translate(-2px, 2px); /*Le indicamos que la línea 3 rote -45 grados y que se translade hasta una posición que quede bien*/
+
+}
+
+.active-line2-bars-menu{ /*A partir de acá le damos animación para que cuando clickeemos en el menú se convierta en una cruz*/
+    opacity: 0; /*Le indicamos a la línea 2 que tenga una opacidad total tras la animación*/
+    margin-left: -30px; /*Indicamos que mientrás se haga opaco se mueva a la izquierda*/
+
+}
+
+/*Menú desplegable*/
+
+.main-nav {
+    position: fixed; /*Le decimos que el menú se mantenga fijo cuando la persona scrollea*/
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    margin-left: -100%;
+    transition: all 0.2s linear;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .main-nav.show {/*Esta clase es a la que vamos a llamar para hacer la interacción en JS*/
+    margin-left: 0;
+  }
+
+  .nav-links {
+    background-color: var(--blanco-1);
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .link-item {
+    margin-top: 2rem;
+    color: var(--gris-2);
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    font-family: 'Gotham', sans-serif;
+  }
+
+  .icono-insta{
+    display: none;
+  }
+
+  /*Configuración para ordenador*/
+
+  @media screen and (min-width: 768px) {
+  .contenedor-menu-movil {
+    display: none;
+  }
+
+  .icono-insta{
+    font-size: 1.7rem;
+    display: block;
+  }
+
+  .instagram-nombre{
+    display: none;
+  }
+
+  .main-nav {
+    position: static;
+    margin-left: 0;
+    flex-basis: 70%;
+    height: 100%;
+  }
+
+  .nav-links {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    padding: 0.5rem;
+  }
+
+  .link-item {
+    color: var(--blanco-1);
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 2rem;
+  }
+
+  .link-item:hover {
+    color: var(--blanco-2);
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 2rem;
+  }
 }
 
 /*Bloques Generales*/
@@ -374,7 +511,7 @@ html { /*Esto es para que el footer se quede abajo*/
     border-radius: 10px;
     padding: 0.5rem;
     text-decoration: none;
-    color: white;
+    color: var(--blanco-1);
     font-size: 2rem;
 }
 
@@ -465,7 +602,7 @@ footer{
 .back{
     position: absolute;
     font-size: 2rem;
-    margin-top: 0.5rem;
+    margin-top: 2.5rem;
     margin-left: 2rem;
     padding: 0.1rem;
     font-weight: bold;
@@ -484,7 +621,3 @@ footer{
         margin-top: 0rem;
     }
   }
-
-
-
-

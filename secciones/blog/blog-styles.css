@@ -50,13 +50,10 @@ body{
 }
 
 
-@media (max-width: 600px) {
-    .imagen-header{
-        height: 8rem;
-    }
+@media (max-width: 768px) {
     .foto-portada{
-        width: 8rem;
-        justify-self: center; 
+        justify-self: center;
+        margin-top: -2.5rem;
     }
   }
   
@@ -74,13 +71,12 @@ body{
     
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .contenedor-presentacion{
-        margin-bottom: 1.5rem;
-        position: relative;
-        top: 1.5rem;
+        margin-top: 3rem;
     }
   }
+
 
 .nombre-pagina{
     font-size: 2.5rem;

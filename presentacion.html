@@ -28,12 +28,41 @@
 </script>
 
 <body>
+    
 
     <!-- Encabezado -->
 
     <header class="header">
 
-        <a class="back" href="javascript:history.back()">←</a>
+         <!-- Comienza Menú hamburguesa para móvil -->
+
+         <div class="container-menu">
+
+            <div class="contenedor-menu-movil">
+
+                <h1 class="titulo-menu-movil">Gonza viaja</h1>
+        
+               <div id="bars-menu" class="bars-menu">
+                 <span class="line1-bars-menu"></span>
+                 <span class="line2-bars-menu"></span>
+                 <span class="line3-bars-menu"></span>
+               </div>
+
+            </div>
+      
+               <nav id="nav" class="main-nav">
+                <div class="nav-links">
+                  <a class="link-item" href="secciones/tips/tips-de-viajes.html">Tips de viajes</a>
+                  <a class="link-item" href="secciones/euroviaje/euro-viaje-2023.html">Euroviaje Lowcost 2023</a>
+                  <a class="link-item" href="secciones/contenido-exclusivo/contenido-exclusivo.html">Contenido exclusivo</a>
+                  <a class="link-item" href="https://www.instagram.com/gonzaviaja/"><p class="instagram-nombre">Instagram</p><i class="icono-insta fa-brands fa-instagram"></i></a>
+                </div>
+               </nav>
+      
+        </div>
+
+        <!-- Finaliza Menú hamburguesa para móvil -->
+
 
         <div class="contenedor-principal">
 
@@ -46,14 +75,14 @@
                 <a class="link-insta-principal" href="https://www.instagram.com/destino_playas/">
 
                     <i class="fa-brands fa-instagram"></i>
-                    <p class="nombre-insta">@gonzaviaja</p>
+                    <p class="nombre-insta">seguir</p>
                 </a>
 
             </div>
 
         </div>
 
-        <img class="imagen-header" src="images-index/background-imagen.webp" alt="">
+        <img class="imagen-header" src="images-index/background-imagen-01.webp" alt="">
         
     </header>
 
@@ -86,27 +115,7 @@
 
     </section>
 
-    <!-- Fin de presentación -->
-
-    <script src="secciones/blog/blog-y-novedades.js"></script>
-
-    <!-- Script formulario-->
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycby4U74aYEs4zGzFWVAcd__ScwvKz8FRsU2Nt6PHzMvWbTW-ry3m_0TxBmfS7FIF38JS0w/exec'
-        const form = document.forms['basededatosviajeros'] //Punto 3
-        
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => $("#form_alerts").html("<div class='alert alert-success'>Link de tu contenido: <a href='https://bit.ly/3KquPvC'>https://bit.ly/3KquPvC</a></div>"))//Acá indicamos la url para que descargue el contenido exclusivo
-            .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>El mensaje no fue enviado.</div>"))
-        })
-    </script>
-
-    <!-- Fin script formulario-->
+    <script src="menu-pagina-principal.js"></script>
 
 </body>
 </html>

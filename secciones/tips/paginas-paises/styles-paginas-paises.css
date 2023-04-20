@@ -44,13 +44,10 @@ html { /*Esto es para que el footer se quede abajo*/
     justify-self: start;  
 }
 
-@media (max-width: 600px) {
-    .imagen-header{
-        height: 8rem;
-    }
+@media (max-width: 768px) {
     .bandera-pais{
-        width: 8rem;
         justify-self: center;
+        margin-top: -2.5rem;
     }
   }
 
@@ -67,7 +64,7 @@ html { /*Esto es para que el footer se quede abajo*/
     
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .contenedor-presentacion{
         margin-bottom: 2.5rem;
         position: relative;

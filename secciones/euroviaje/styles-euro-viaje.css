@@ -48,13 +48,10 @@ body{
     border-radius: 50%;
 }
 
-@media (max-width: 600px) {
-    .imagen-header{
-        height: 8rem;
-    }
+@media (max-width: 768px) {
     .foto-portada{
-        width: 8rem;
-        justify-self: center; 
+        justify-self: center;
+        margin-top: -2.5rem;
     }
   }
 

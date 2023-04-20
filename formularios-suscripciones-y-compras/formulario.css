@@ -38,6 +38,35 @@
     color: var(--gris-2);
 }
 
+.contenedor-general-checkbox{
+    display: flex;
+    grid-gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+    .contenedor-general-checkbox{
+        justify-content: center;
+    }
+  }
+
+
+.contenedor-checkbox{
+    color: var(--gris-2);
+}
+
+.aclaracion-form{
+    color: var(--gris-2);
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .aclaracion-form{
+        text-align: center;
+    }
+  }
+
 .boton-enviar{
     width: fit-content;
     border-radius: 10px;
@@ -64,6 +93,7 @@
 .mensaje-confirmacion{
     width: fit-content;
     margin: auto;
+    margin-bottom: 1rem;
     border: 1px solid rgb(49, 150, 49);
     color: rgb(5, 114, 5);
     padding: 1rem;

@@ -52,12 +52,39 @@
             </div>
 
             <div class="formulario-grupo">
+                <label for="interes" class="formulario-label">¿Qué destinos te interesan?</label>
+                <div class="contenedor-general-checkbox">
+                    <div class="contenedor-checkbox"> <input type="checkbox" id="interes-europa" name="interes-europa" class="formulario-input" value="si" multiple> Europa</div>
+                    <div class="contenedor-checkbox"> <input type="checkbox" id="interes-caribe" name="interes-caribe" class="formulario-input" value="si" multiple> Caribe</div>
+                    <div class="contenedor-checkbox"> <input type="checkbox" id="interes-asia" name="interes-asia" class="formulario-input" value="si" multiple> Asia</div>
+                    <div class="contenedor-checkbox"> <input type="checkbox" id="interes-sudamerica" name="interes-sudamerica" class="formulario-input" value="si" multiple> Sudamérica</div>
+                    <div class="contenedor-checkbox"> <input type="checkbox" id="interes-africa" name="interes-africa" class="formulario-input" value="si" multiple> África</div>
+                    <div class="contenedor-checkbox">  <input type="checkbox" id="interes-brasil" name="interes-brasil" class="formulario-input" value="si" multiple> Brasil</div>
+                    <div class="contenedor-checkbox"><input type="checkbox" id="interes-argentina" name="interes-argentina" class="formulario-input" value="si" multiple> Argentina</div>
+                    <div class="contenedor-checkbox"> <input type="checkbox" id="interes-todos" name="interes-todos" class="formulario-input" value="si" multiple> Todos</div>
+                </div>
+            </div>
+       
+            <select type="text" id="interes" name="interes" class="formulario-input" required>
+                <option value="todos">Todos</option>
+                <option value="europa">Europa</option>
+                <option value="caribe">Caribe</option>
+                <option value="asia">Asia</option>
+                <option value="argentina">Argentina</option>
+                <option value="brasil">Brasil</option>
+                <option value="africa">África</option>
+                <option value="sudamerica">Sudamérica</option>
+            </select>
+
+            <div class="formulario-grupo">
                 <button class="boton-enviar" type="submit">Enviar</button>
             </div>
 
             <div id="form_alerts">
                 <!-- Acá va la respuesta del formulario.-->
             </div>
+
+            <p class="aclaracion-form">*La información de este formulario jamás será compartida ni comercializada, solamente tiene como finalidad generar una base de datos de suscriptores a los que les enviaremos contenido basado en sus intereses.</p>
 
         </form>
 

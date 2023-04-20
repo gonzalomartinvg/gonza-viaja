@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="En esta web vas a encontrar tips para viajar por tu cuenta sin gastar de más. Además, vas a poder conocer nuevos destinos que te van a servir de inspiración para salir a recorrer el mundo.">
     <link rel="shortcut icon" href="images-index/favicon.webp">
     <title>Gonza, el de Destino Playas!</title>
     <link href="https://fonts.cdnfonts.com/css/gotham?styles=17581,17582,17583,17584,17585,17587,17586,17579,17588,17580,17589,17591,17592,17595,17590,17593,17594,17596" rel="stylesheet">
@@ -33,6 +33,35 @@
 
     <header class="header">
 
+         <!-- Comienza Menú hamburguesa para móvil -->
+
+        <div class="container-menu">
+
+            <div class="contenedor-menu-movil">
+
+                <h1 class="titulo-menu-movil">Gonza viaja</h1>
+        
+               <div id="bars-menu" class="bars-menu">
+                 <span class="line1-bars-menu"></span>
+                 <span class="line2-bars-menu"></span>
+                 <span class="line3-bars-menu"></span>
+               </div>
+
+            </div>
+      
+               <nav id="nav" class="main-nav">
+                <div class="nav-links">
+                  <a class="link-item" href="secciones/tips/tips-de-viajes.html">Tips de viajes</a>
+                  <a class="link-item" href="secciones/euroviaje/euro-viaje-2023.html">Euroviaje Lowcost 2023</a>
+                  <a class="link-item" href="secciones/contenido-exclusivo/contenido-exclusivo.html">Contenido exclusivo</a>
+                  <a class="link-item" href="https://www.instagram.com/gonzaviaja/"><p class="instagram-nombre">Instagram</p><i class="icono-insta fa-brands fa-instagram"></i></a>
+                </div>
+               </nav>
+      
+        </div>
+
+        <!-- Finaliza Menú hamburguesa para móvil -->
+      
         <div class="contenedor-principal">
 
             <img href="" class="imagen-principal" src="images-index/imagen-principal.webp" alt="Imagen Gonzalo">
@@ -44,7 +73,7 @@
                 <a class="link-insta-principal" href="https://www.instagram.com/gonzaviaja/">
 
                     <i class="fa-brands fa-instagram"></i>
-                    <p class="nombre-insta">@gonzaviaja</p>
+                    <p class="nombre-insta">seguir</p>
 
                 </a>
 
@@ -52,7 +81,7 @@
 
         </div>
 
-        <img class="imagen-header" src="images-index/background-imagen.webp" alt="">
+        <img class="imagen-header" src="images-index/background-imagen-01.webp" alt="">
         
     </header>
 
@@ -62,9 +91,9 @@
 
     <section class="presentacion">
 
-        <p>Soy <a class="hipervinculo" href="https://www.instagram.com/gonzaviaja/">Gonza</a>, el de Destino Playas, en esta página vas a conocer muchísimos <span class="semi-bold">tips</span> para poder viajar por tu cuenta <span class="semi-bold">sin pagar de más.</span></p>
+        <p>Soy <a class="hipervinculo" href="presentacion.html">Gonza</a>, el de Destino Playas, en esta página vas a conocer muchísimos <span class="semi-bold">tips</span> para poder viajar por tu cuenta <span class="semi-bold">sin pagar de más.</span></p>
         <br>
-        <p>El <span class="semi-bold">26 de abril</span> comienzo un viaje <span class="semi-bold">Lowcost por Europa</span> y te voy a contar todo en mi <a class="hipervinculo" href="">Instagram</a> y en la sección <a class="hipervinculo" href="secciones/euroviaje/euro-viaje-2023.html">Europa Lowcost</a></p>
+        <p>El <span class="semi-bold">26 de abril</span> comienzo un viaje <span class="semi-bold">Lowcost por Europa</span> y te voy a contar todo en mi <a class="hipervinculo" href="https://www.instagram.com/gonzaviaja/">Instagram</a> y en la sección <a class="hipervinculo" href="secciones/euroviaje/euro-viaje-2023.html">Europa Lowcost</a></p>
 
     </section>
 
@@ -114,22 +143,27 @@
             </div>
 
             <div class="formulario-grupo">
+                <label for="pais-residencia" class="formulario-label">País</label>
+                <input type="text" id="pais-residencia" name="pais-residencia" class="formulario-input" placeholder="Ingresá tu país de residencia" required>
+            </div>
+
+            <div class="formulario-grupo">
                 <label for="email" class="formulario-label">Email</label>
                 <input type="email" id="email" name="email" class="formulario-input" placeholder="Ingresá tu mail" required>
             </div>
 
             <div class="formulario-grupo">
                 <label for="interes" class="formulario-label">¿Qué destinos te interesan?</label>
-                <select type="text" id="interes" name="interes" class="formulario-input" required>
-                    <option value="sudamerica">Todos</option>
-                    <option value="europa">Europa</option>
-                    <option value="caribe">Caribe</option>
-                    <option value="asia">Asia</option>
-                    <option value="argentina">Argentina</option>
-                    <option value="brasil">Brasil</option>
-                    <option value="africa">África</option>
-                    <option value="sudamerica">Sudamérica</option>
-                </select>
+                <div class="contenedor-general-checkbox">
+                    <div class="contenedor-checkbox"> <input type="checkbox" id="interes-europa" name="interes-europa" class="formulario-input" value="si" multiple> Europa</div>
+                    <div class="contenedor-checkbox"> <input type="checkbox" id="interes-caribe" name="interes-caribe" class="formulario-input" value="si" multiple> Caribe</div>
+                    <div class="contenedor-checkbox"> <input type="checkbox" id="interes-asia" name="interes-asia" class="formulario-input" value="si" multiple> Asia</div>
+                    <div class="contenedor-checkbox"> <input type="checkbox" id="interes-sudamerica" name="interes-sudamerica" class="formulario-input" value="si" multiple> Sudamérica</div>
+                    <div class="contenedor-checkbox"> <input type="checkbox" id="interes-africa" name="interes-africa" class="formulario-input" value="si" multiple> África</div>
+                    <div class="contenedor-checkbox">  <input type="checkbox" id="interes-brasil" name="interes-brasil" class="formulario-input" value="si" multiple> Brasil</div>
+                    <div class="contenedor-checkbox"><input type="checkbox" id="interes-argentina" name="interes-argentina" class="formulario-input" value="si" multiple> Argentina</div>
+                    <div class="contenedor-checkbox"> <input type="checkbox" id="interes-todos" name="interes-todos" class="formulario-input" value="si" multiple> Todos</div>
+                </div>
             </div>
 
             <div class="formulario-grupo">
@@ -139,6 +173,8 @@
             <div id="form_alerts">
                 <!-- Acá va la respuesta del formulario.-->
             </div>
+
+            <p class="aclaracion-form">*La información de este formulario jamás será compartida ni comercializada, solamente tiene como finalidad generar una base de datos de suscriptores a los que les enviaremos contenido basado en sus intereses.</p>
 
         </form>
 
@@ -250,6 +286,8 @@
     <script src="secciones/blog/blog-y-novedades.js"></script>
 
     <script src="secciones/paginas/relacionados.js"></script>
+
+    <script src="menu-pagina-principal.js"></script>
 
     <!-- Script formulario-->
 

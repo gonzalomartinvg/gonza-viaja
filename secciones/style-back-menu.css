@@ -3,7 +3,7 @@
 .back{
     position: absolute;
     font-size: 2rem;
-    margin-top: 0.5rem;
+    margin-top: 2.5rem;
     margin-left: 2rem;
     padding: 0.1rem;
     font-weight: bold;
@@ -17,29 +17,163 @@
     color: rgb(216, 213, 213);
 }
 
-.nombre-home{
-    position: absolute;
-    right: 1rem;
-    font-family: 'Gotham thin', sans-serif;
-    font-size: 2.5rem;
-    margin-top: 2rem;
-    margin-right: 2rem;
-    padding: 0.1rem;
-    font-weight: bold;
-    color: var(--blanco-1);
-    text-decoration: none;
-    z-index: 1;
-    border-radius: 10px;
-}
-
-.nombre-home:hover{
-    color: rgb(216, 213, 213);
-}
-
-@media (max-width: 600px) {
-    .nombre-home{
-        font-size: 2rem;
-        margin-top: 1rem;
-        margin-right: 1rem;
+@media (max-width: 768px) {
+    .back{   
+        margin-top: 0.8rem;
     }
+}
+
+/* MENÚ */
+
+.container-menu{
+    width: 100%;
+    margin: auto;
+    display: grid;
+}
+
+/*Configuración para Móvil*/
+
+/*Trabajamos el botón de tres líneas*/
+
+.contenedor-menu-movil{
+    width: 90%;
+    margin: auto;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: grid;
+    background-color: transparent;
+    z-index: 2;
+}
+
+.titulo-menu-movil{
+    color: var(--blanco-1);
+    font-size: 1.8rem;
+}
+
+.bars-menu{ /*Es el contenedor del menú superior derecho con las tres líneas*/
+    width: 30px; /*Le decimos que tenga ancho de 30px*/
+    height: 30px; /*Le decimos que tenga alto de 30px*/
+    cursor: pointer; /*Le indicamos que al pasar el cursor por arriba se active la manito de clickeable*/
+    justify-self: end;
+}
+
+.bars-menu span{ /*Con los span estamos haciendo las líneas del menú hamburguesa*/
+    display: block; /*Los span, naturalmente no viene con propiedad en bloque, si no, en línea*/
+    width: 100%; /*Le indicamos que ocupe el 100% de su padre, es decir el ".bars-menu"*/
+    height: 3px; /*Cada línea va a tener 2px de alto*/
+    background-color: var(--blanco-1);
+    border-radius: 10px;
+    margin-top: 6px; /*Separamos a las líneas*/
+    transform-origin: 0px 100%; /*Hace que las líneas de los span se mantengan en su eje original al rotar*/
+    transition: all 600ms; /*Indicamos la velocidad de transición a su nueva posición*/
+
+}
+
+/*ACLARACIÓN JAVASCRIPT: Hasta el momento habíamos definido el contenedor del menú hamburguesa en ".bars-menu" y las 3 líneas con ".bars-menu span".
+Ahora, vamos a indicarle una animación. Para esto, generamos una clase específica que vamos a referenciar dsp en Javascript y que no esta nombrada
+en el html. Por ejemplo, acá las llamé igual que las clases que le dimos en html, pero agregandole ACTIVE adelante*/
+
+.active-line1-bars-menu{ /*A partir de acá le damos animación para que cuando clickeemos en el menú se convierta en una cruz*/
+    transform: rotate(45deg) translate(-2px, 1px); /*Le indicamos que la línea 1 rote 45 grados y que se translade hasta una posición que quede bien*/
+
+}
+
+.active-line3-bars-menu{ /*A partir de acá le damos animación para que cuando clickeemos en el menú se convierta en una cruz*/
+    transform: rotate(-45deg) translate(-2px, 2px); /*Le indicamos que la línea 3 rote -45 grados y que se translade hasta una posición que quede bien*/
+
+}
+
+.active-line2-bars-menu{ /*A partir de acá le damos animación para que cuando clickeemos en el menú se convierta en una cruz*/
+    opacity: 0; /*Le indicamos a la línea 2 que tenga una opacidad total tras la animación*/
+    margin-left: -30px; /*Indicamos que mientrás se haga opaco se mueva a la izquierda*/
+
+}
+
+/*Menú desplegable*/
+
+.main-nav {
+    position: fixed; /*Le decimos que el menú se mantenga fijo cuando la persona scrollea*/
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    margin-left: -100%;
+    transition: all 0.2s linear;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .main-nav.show {/*Esta clase es a la que vamos a llamar para hacer la interacción en JS*/
+    margin-left: 0;
+  }
+
+  .nav-links {
+    background-color: var(--blanco-1);
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .link-item {
+    margin-top: 2rem;
+    color: var(--gris-2);
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    font-family: 'Gotham', sans-serif;
+  }
+
+  .icono-insta{
+    display: none;
+  }
+
+  /*Configuración para ordenador*/
+
+  @media screen and (min-width: 768px) {
+  .contenedor-menu-movil {
+    display: none;
+  }
+
+  .icono-insta{
+    font-size: 1.7rem;
+    display: block;
+  }
+
+  .instagram-nombre{
+    display: none;
+  }
+
+  .main-nav {
+    position: static;
+    margin-left: 0;
+    flex-basis: 70%;
+    height: 100%;
+  }
+
+  .nav-links {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    padding: 0.5rem;
+  }
+
+  .link-item {
+    color: var(--blanco-1);
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 2rem;
+  }
+
+  .link-item:hover {
+    color: var(--blanco-2);
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 2rem;
+  }
 }

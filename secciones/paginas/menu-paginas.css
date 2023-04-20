@@ -55,12 +55,11 @@
 
 .elemento-menu{
     font-size: 2rem;
-    background-color: var(--blanco-1);;
+    background-color: var(--blanco-3);
     padding: 0.5rem;
     border-radius: 10px;
     border: solid var(--accent-color);
     color: var(--accent-color);
-    background-color: var(--blanco-2);
     text-decoration: none;
     display: grid;
 

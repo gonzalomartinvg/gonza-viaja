@@ -30,16 +30,13 @@
     border: solid 3px white;   
 }
 
-@media (max-width: 600px) {
-    .imagen-header{
-        height: 8rem;
-    }
+@media (max-width: 768px) {
     .foto-portada{
-        width: 8rem;
-        justify-self: center; 
+        justify-self: center;
+        margin-top: -2.5rem;
     }
   }
-
+  
 /*Subtitulo*/
 
 .contenedor-nombre-pagina-y-bajada{
@@ -50,7 +47,7 @@
     bottom: 2rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .contenedor-nombre-pagina-y-bajada{
         margin-top: 3rem;
     }
