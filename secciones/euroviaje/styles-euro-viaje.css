@@ -94,6 +94,11 @@ body{
     color: var(--gris-3);
 }
 
+.parrafo{
+    line-height: 1.5rem;
+    text-align: center;
+}
+
 .hipervinculo{
     font-weight: 800;
     color: var(--primary-color);

@@ -17,9 +17,6 @@ body{
     }
 }
 
-
-/*HEADER*/
-
 /*HEADER*/
 
 .header{
@@ -102,6 +99,11 @@ body{
     font-weight: 400;
     text-align: center;
     color: var(--gris-3);
+}
+
+.parrafo{
+    line-height: 1.5rem;
+    text-align: center;
 }
 
 /*Bloques Generales*/

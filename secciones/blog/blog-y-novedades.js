@@ -7,6 +7,26 @@
 
 const notasBlogYNovedades = {
 
+    "nota6":[
+        {
+            "titulo": "Cuatro pueblos mágicos cerca de Madrid",
+
+            "bajada": "Descubrí cuatro pueblos mágicos que podés visitar fácilmente desde Madrid. Castillos, murallas y mucho ambiente medieval a pocos km de la capital española.",
+
+            "origen": "blog",
+
+            "url": "cuatro-pueblos-magicos-cerca-de-madrid.html",
+
+            "foto": "buitrago.webp",
+
+            "visibilidad": "blog, europalowcost, paginaprincipal",
+
+            "destacada": "no",
+
+            "autor": "Gonzalo Volpe Gómez"
+        }
+    ],
+    
     "nota5":[
         {
             "titulo": "Trucos para pagar menos los vuelos",

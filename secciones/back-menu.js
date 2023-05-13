@@ -7,8 +7,6 @@ const divCreadoBack = document.createElement("div"); //Creamos el div a introduc
 const contenidoAutoGeneradoContenedorBack = //Generamos el contenido del div. Las `` siguientes se utilizan para hacer un html literal
                 `
                 
-                <a class="back" href="javascript:history.back()">←</a>
-
                 <!-- Comienza Menú hamburguesa para móvil -->
 
                 <div class="container-menu">
@@ -29,6 +27,7 @@ const contenidoAutoGeneradoContenedorBack = //Generamos el contenido del div. La
                         <a class="link-item" href="https://gonzaviaja.com/secciones/tips/tips-de-viajes.html">Tips de viajes</a>
                         <a class="link-item" href="https://gonzaviaja.com/secciones/euroviaje/euro-viaje-2023.html">Euroviaje Lowcost 2023</a>
                         <a class="link-item" href="https://gonzaviaja.com/secciones/contenido-exclusivo/contenido-exclusivo.html">Contenido exclusivo</a>
+                        <a class="link-item" href="https://gonzaviaja.com/secciones/blog/blog.html">Blog</a>
                         <a class="link-item" href="https://www.instagram.com/gonzaviaja/"><p class="instagram-nombre">Instagram</p><i class="icono-insta fa-brands fa-instagram"></i></a>
                         </div>
                     </nav>
